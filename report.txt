@@ -1,0 +1,22 @@
+Models
+
+user
+	-id
+	-name
+	-address
+	-phone
+	-role
+menu
+	-foodId
+	-name
+	-priceperunit
+	-quantityinstock
+order
+	-orderid
+	-customerId
+	-status
+orderDetails
+	-orderid
+	-foodId
+	-quantity_ordered
+	-total_price
