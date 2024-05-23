@@ -1,4 +1,4 @@
-Models
+---------------- Models ----------------
 
 user
 	-id
@@ -11,12 +11,129 @@ menu
 	-name
 	-priceperunit
 	-quantityinstock
+cart
+	-cartId
+	-customerId
+cartDetails
+	-cartId
+	-foodId
+	-quantity_ordered
+	-total_price
 order
 	-orderid
 	-customerId
 	-status
+	-isConfirmed
 orderDetails
 	-orderid
 	-foodId
 	-quantity_ordered
 	-total_price
+Payment
+	-pId
+	-oId
+	-customerId
+	-amount
+	-status
+	-method
+Feedback
+	-fbId
+	-fId
+	-customerId
+	-comment
+	-rating
+FeedbackComment
+	-commentId
+	-customerId
+	-fbId
+	-comment
+
+
+----------------- Business Logics -----------------
+
+user registration
+	- endpoint
+	- post
+	- no role based auth
+user login
+	- endpoint
+	- post
+	- no role based auth
+	- generate jwt auth token
+generate token
+	- service
+empty cart
+	- service
+	- conditional(when order is confirmed)
+
+Admin services 
+
+stock inventory
+	-- add items to menu
+		- endpoint and service
+		- post
+		- role based auth
+	-- update inventory
+		- endpoint and service
+		- put
+		- role based auth
+	-- view inventory
+		-- view by id
+			- endpoint and service
+			- get
+			- role based auth
+		-- view all
+			- endpoint and service
+			- get
+			- role based auth
+customer handling
+	-- view feedback
+		- endpoint and service
+		- get
+		- role based auth
+	-- comment to feedback
+		- endpoint and service
+		- post
+		- role based auth
+
+Customer Services
+
+order
+	-- add to cart
+		- endpoint and service
+		- post
+	-- view cart
+		- endpoint and service
+		- get
+	-- update cart
+		- endpoint and service
+		- put
+	-- remove from cart
+		- endpoint and service
+		- delete
+	-- place order
+		- endpoint and service
+		- post
+		- role based auth
+	-- update order
+		- endpoint and service
+		- put
+		- role based
+	-- cancel order
+		- endpoint and service
+		- delete
+		- role based auth
+
+feedback
+
+	--give feedback for dish
+		- endpoint and service
+		- post
+		- role based
+	-- view given feedbacks
+		- endpoint and service
+		- get
+		- role based
+
+----------------- DTOs ------------------
+
