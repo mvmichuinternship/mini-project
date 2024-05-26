@@ -5,7 +5,7 @@ namespace FoodDeliveryWebApp.models.DTOs.loginDTOs
     public class LoginAdminDTO
     {
         [Required(ErrorMessage = "User id cannot be empty")]
-        [Range(100, 999, ErrorMessage = "Invalid entry for admin ID")]
+        [Range(0, 999, ErrorMessage = "Invalid entry for admin ID")]
         public int UserId { get; set; }
 
         [MinLength(6, ErrorMessage = "Password has to be minmum 6 chars long")]

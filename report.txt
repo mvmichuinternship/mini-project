@@ -137,3 +137,14 @@ feedback
 
 ----------------- DTOs ------------------
 
+register
+
+	-- AdminRegister
+	-- CustomerRegister
+
+login
+	-- LoginUser 
+	-- LoginToken
+
+cart
+	--CartandDetails

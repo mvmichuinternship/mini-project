@@ -47,6 +47,53 @@ namespace FoodDeliveryWebApp.Migrations
                     b.ToTable("Admins");
                 });
 
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.CartDetails", b =>
+                {
+                    b.Property<int>("CartDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartDetailsId"), 1L, 1);
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MenuFId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Qty_ordered")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Total")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartDetailsId");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("MenuFId");
+
+                    b.ToTable("CartDetails");
+                });
+
             modelBuilder.Entity("FoodDeliveryWebApp.models.Customer", b =>
                 {
                     b.Property<int>("Id")
@@ -70,6 +117,29 @@ namespace FoodDeliveryWebApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Menu", b =>
+                {
+                    b.Property<int>("FId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FId"), 1L, 1);
+
+                    b.Property<string>("FName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("QuantityInStock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnitPrice")
+                        .HasColumnType("int");
+
+                    b.HasKey("FId");
+
+                    b.ToTable("Menus");
                 });
 
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>
@@ -115,6 +185,32 @@ namespace FoodDeliveryWebApp.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Cart", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.CartDetails", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Cart", null)
+                        .WithMany("CartDetails")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FoodDeliveryWebApp.models.Menu", "Menu")
+                        .WithMany()
+                        .HasForeignKey("MenuFId");
+
+                    b.Navigation("Menu");
+                });
+
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>
                 {
                     b.HasOne("FoodDeliveryWebApp.models.Admin", "Admin")
@@ -128,6 +224,11 @@ namespace FoodDeliveryWebApp.Migrations
                     b.Navigation("Admin");
 
                     b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Cart", b =>
+                {
+                    b.Navigation("CartDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 ﻿using FoodDeliveryWebApp.models;
+using FoodDeliveryWebApp.models.DTOs.loginDTOs;
 using FoodDeliveryWebApp.models.DTOs.registerDTOs;
 
 namespace FoodDeliveryWebApp.interfaces
@@ -8,7 +9,7 @@ namespace FoodDeliveryWebApp.interfaces
         public Task<Admin> AdminRegister(RegisterAdminDTO registerAdminDTO);
         public Task<Customer> CustomerRegister(RegisterCustomerDTO registerCustomerDTO);
 
-        public Task<Admin> AdminLogin();
-        public Task<Customer> CustomerLogin();
+        public Task<LoginTokenDTO> AdminLogin(LoginAdminDTO loginAdminDTO);
+        //public Task<Customer> CustomerLogin(LoginCustomer loginCustomer);
     }
 }

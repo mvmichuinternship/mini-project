@@ -5,6 +5,7 @@ namespace FoodDeliveryWebApp.exceptions
     [Serializable]
     internal class UnableToRegisterException : Exception
     {
+        
         public UnableToRegisterException()
         {
         }

@@ -67,3 +67,5 @@ C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplica
 C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplications\day30\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\FoodDeliveryWebApp.pdb
 C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplications\day30\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\FoodDeliveryWebApp.genruntimeconfig.cache
 C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplications\day30\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\ref\FoodDeliveryWebApp.dll
+C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplications\day30\FoodDeliveryWebAppSln\FoodDeliveryWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\VC\Desktop\Presidio\Genspark-trainings\dotnet-trainings\console-spplications\day30\FoodDeliveryWebAppSln\FoodDeliveryWebApp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
