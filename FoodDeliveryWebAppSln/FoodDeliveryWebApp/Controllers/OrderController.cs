@@ -1,10 +1,9 @@
 ﻿using FoodDeliveryWebApp.exceptions;
 using FoodDeliveryWebApp.interfaces;
-using FoodDeliveryWebApp.models;
-using FoodDeliveryWebApp.models.DTOs.cartDTO;
+using FoodDeliveryWebApp.models.DTOs.orderDTO;
 using FoodDeliveryWebApp.models.errorModel;
+using FoodDeliveryWebApp.models;
 using FoodDeliveryWebApp.repositories.dummymodel;
-using FoodDeliveryWebApp.services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,27 +12,26 @@ namespace FoodDeliveryWebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CartController : ControllerBase
+    public class OrderController : ControllerBase
     {
+        private readonly IOrderService _orderServices;
 
-        private readonly ICartService _cartServices;
-
-        public CartController(ICartService cartServices)
+        public OrderController(IOrderService orderServices)
         {
-            _cartServices = cartServices;
+            _orderServices = orderServices;
         }
 
 
         //[Authorize(Roles = "Customer")]
-        [Route("RegisterCart")]
+        [Route("RegisterOrder")]
         [HttpPost]
-        [ProducesResponseType(typeof(CartDetails), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<CartDetails>> Register(CartAndDetailsDTO menu)
+        public async Task<ActionResult<string>> Register(OrderAndDetailsDTO menu)
         {
             try
             {
-                CartDetails result = await _cartServices.AddCartAndDetails(menu);
+                string result = await _orderServices.AddOrderAndDetails(menu);
                 return Ok(result);
             }
             catch (UnableToAddException ex)
@@ -46,11 +44,11 @@ namespace FoodDeliveryWebApp.Controllers
 
         //[Authorize(Roles = "Customer")]
         [HttpGet]
-        public async Task<Cart> ViewCart(int id)
+        public async Task<Order> ViewOrder(int id)
         {
 
-            var cart = await _cartServices.GetCart(id);
-            return cart;
+            var order = await _orderServices.GetOrder(id);
+            return order;
 
 
         }
@@ -58,11 +56,11 @@ namespace FoodDeliveryWebApp.Controllers
 
         //[Authorize(Roles = "Customer")]
         [HttpGet("GetTotal")]
-        public async Task<CartTotalResult> ViewTotal(int id)
+        public async Task<OrderTotalResult> ViewTotal(int id)
         {
 
-            var cart = await _cartServices.GetTotal(id);
-            return cart;
+            var order = await _orderServices.GetTotal(id);
+            return order;
 
 
         }

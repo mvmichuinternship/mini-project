@@ -21,7 +21,7 @@ namespace FoodDeliveryWebApp.Controllers
             _adminServices = adminServices;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [Route("RegisterMenu")]
         [HttpPost]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
@@ -39,7 +39,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpPut("UpdateMenu")]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
@@ -56,7 +56,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpDelete("DeleteMenu")]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
@@ -73,7 +73,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IEnumerable<Menu>> ViewRequestAdmin()
         {

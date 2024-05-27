@@ -36,7 +36,7 @@ namespace FoodDeliveryWebApp.repositories
 
         public async Task<Cart> Get(int key)
         {
-            return (await _context.Carts.SingleOrDefaultAsync(u => u.CartId == key)) ?? throw new NoId("No user with the given ID");
+            return (await _context.Carts.SingleOrDefaultAsync(u => u.CartId == key)) ;
         }
 
         public async Task<IEnumerable<Cart>> GetAll()

@@ -4,6 +4,7 @@ using FoodDeliveryWebApp.context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodDeliveryWebApp.Migrations
 {
     [DbContext(typeof(FoodAppContext))]
-    partial class FoodAppContextModelSnapshot : ModelSnapshot
+    [Migration("20240527094833_order")]
+    partial class order
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -199,38 +201,6 @@ namespace FoodDeliveryWebApp.Migrations
                     b.ToTable("OrderDetails");
                 });
 
-            modelBuilder.Entity("FoodDeliveryWebApp.models.Payment", b =>
-                {
-                    b.Property<int>("PayId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PayId"), 1L, 1);
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PaymentMethod")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("PayId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Payments");
-                });
-
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -322,17 +292,6 @@ namespace FoodDeliveryWebApp.Migrations
                         .HasForeignKey("OrderOId");
 
                     b.Navigation("Menu");
-                });
-
-            modelBuilder.Entity("FoodDeliveryWebApp.models.Payment", b =>
-                {
-                    b.HasOne("FoodDeliveryWebApp.models.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>

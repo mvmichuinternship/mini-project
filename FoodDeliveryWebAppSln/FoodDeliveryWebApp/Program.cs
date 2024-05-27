@@ -77,13 +77,20 @@ namespace FoodDeliveryWebApp
             builder.Services.AddScoped<IRepository<int,Customer>,CustomerRepository>();
             builder.Services.AddScoped<IRepository<int,Menu>,MenuRepository>();
             builder.Services.AddScoped<IRepository<int,Cart>,CartRepository>();
+            builder.Services.AddScoped<IRepository<int,Order>, OrderRepository>();
             builder.Services.AddScoped<IRepository<int,CartDetails>,CartDetailsRepository>();
+            builder.Services.AddScoped<IRepository<int, OrderDetails>, OrderDetailsRepository>();
+            builder.Services.AddScoped<IRepository<int, Payment>, PaymentRepository>();
+            builder.Services.AddScoped<CartDetailsRepository>();
+            builder.Services.AddScoped<OrderDetailsRepository>();
 
 
             builder.Services.AddScoped<IRegisterLoginService,RegisterLoginService>();
             builder.Services.AddScoped<ITokenService,TokenService>();
             builder.Services.AddScoped<IAdminServices,AdminServices>();
             builder.Services.AddScoped<ICartService,CartService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
 
             var app = builder.Build();
 
