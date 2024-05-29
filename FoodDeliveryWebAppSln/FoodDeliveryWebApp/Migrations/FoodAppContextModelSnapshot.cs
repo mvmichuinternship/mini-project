@@ -119,6 +119,65 @@ namespace FoodDeliveryWebApp.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("FoodDeliveryWebApp.models.FbComment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
+
+                    b.Property<int>("AdminId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CommentText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FbId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CommentId");
+
+                    b.ToTable("FbComments");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Feedback", b =>
+                {
+                    b.Property<int>("FbId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FbId"), 1L, 1);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("FbCommentCommentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("FbId");
+
+                    b.HasIndex("CommentId");
+
+                    b.HasIndex("FbCommentCommentId");
+
+                    b.ToTable("Feedbacks");
+                });
+
             modelBuilder.Entity("FoodDeliveryWebApp.models.Menu", b =>
                 {
                     b.Property<int>("FId")
@@ -296,6 +355,21 @@ namespace FoodDeliveryWebApp.Migrations
                     b.HasOne("FoodDeliveryWebApp.models.Menu", "Menu")
                         .WithMany()
                         .HasForeignKey("MenuFId");
+
+                    b.Navigation("Menu");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Feedback", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Menu", "Menu")
+                        .WithMany()
+                        .HasForeignKey("CommentId");
+
+                    b.HasOne("FoodDeliveryWebApp.models.FbComment", "FbComment")
+                        .WithMany()
+                        .HasForeignKey("FbCommentCommentId");
+
+                    b.Navigation("FbComment");
 
                     b.Navigation("Menu");
                 });

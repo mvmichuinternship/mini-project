@@ -81,8 +81,11 @@ namespace FoodDeliveryWebApp
             builder.Services.AddScoped<IRepository<int,CartDetails>,CartDetailsRepository>();
             builder.Services.AddScoped<IRepository<int, OrderDetails>, OrderDetailsRepository>();
             builder.Services.AddScoped<IRepository<int, Payment>, PaymentRepository>();
+            builder.Services.AddScoped<IRepository<int, Feedback>, FeedbackRepository>();
+            builder.Services.AddScoped<IRepository<int, FbComment>, FeedbackCommentRepository>();
             builder.Services.AddScoped<CartDetailsRepository>();
             builder.Services.AddScoped<OrderDetailsRepository>();
+            builder.Services.AddScoped<FeedbackCommentRepository>();
 
 
             builder.Services.AddScoped<IRegisterLoginService,RegisterLoginService>();
@@ -91,6 +94,7 @@ namespace FoodDeliveryWebApp
             builder.Services.AddScoped<ICartService,CartService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IPaymentService, PaymentService>();
+            builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 
             var app = builder.Build();
 

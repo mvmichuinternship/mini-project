@@ -20,6 +20,8 @@ namespace FoodDeliveryWebApp.context
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<Payment> Payments { get; set; }
-
+        public DbSet<Feedback> Feedbacks { get; set; }
+        
+        public DbSet<FbComment> FbComments { get; set; }
     }
 }

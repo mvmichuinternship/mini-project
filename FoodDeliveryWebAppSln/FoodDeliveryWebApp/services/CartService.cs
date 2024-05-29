@@ -70,12 +70,13 @@ namespace FoodDeliveryWebApp.services
 
         public async Task<CartDetails> AddCartAndDetails(CartAndDetailsDTO cartAndDetailsDTO)
         {
+            CartDetails newCartDetails=null;
             try
             {
                 Cart cart = await _cartRepository.Get(cartAndDetailsDTO.CartId);
                 if (cart != null)
                 {
-                    cart = await _cartRepository.Update(cart);
+                    cart = await _cartRepository.Update(cartAndDetailsDTO);
                 }
                 else
                 {
@@ -85,7 +86,7 @@ namespace FoodDeliveryWebApp.services
 
                 Menu menu = await _menuRepository.Get(cartAndDetailsDTO.FId);
 
-                CartDetails newCartDetails = MapCartDTOToDetails(cartAndDetailsDTO, existingCartDetails?.Total ?? 0, menu.UnitPrice);
+                newCartDetails = MapCartDTOToDetails(cartAndDetailsDTO, existingCartDetails?.Total ?? 0, menu.UnitPrice);
 
                 newCartDetails.CartId = cart.CartId;
 
@@ -95,11 +96,26 @@ namespace FoodDeliveryWebApp.services
             }
             catch (Exception ex)
             {
+                if(newCartDetails != null)
+                {
+
+                await RevertCartDetailsInsert(newCartDetails);
+                }
+                await RevertCartInsert(cartAndDetailsDTO);
                 throw new UnableToRegisterException("Unable to add to cart at the moment", ex);
             }
         }
 
-    
+
+        private async Task RevertCartInsert(Cart admin)
+        {
+            await _cartRepository.Delete(admin.CartId);
+        }
+
+        private async Task RevertCartDetailsInsert(CartDetails admin)
+        {
+            await _cartDetailsRepository.Delete(admin.CartDetailsId);
+        }
 
         private CartDetails MapCartDTOToDetails(CartAndDetailsDTO cartAndDetailsDTO, int total, int price)
         {

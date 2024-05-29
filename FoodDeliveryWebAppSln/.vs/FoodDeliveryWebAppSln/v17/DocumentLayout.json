@@ -3,68 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliveryapptests\\servicetests\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|solutionrelative:fooddeliveryapptests\\servicetests\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliveryapptests\\repositorytests\\cartdetailstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|solutionrelative:fooddeliveryapptests\\repositorytests\\cartdetailstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\cartdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\cartdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\cartdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\cartdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\dtos\\cartdto\\cartanddetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\dtos\\cartdto\\cartanddetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\registerloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\registerloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\context\\foodappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\context\\foodappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\presidio\\genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,210 +26,62 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\CartController.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAA1wCIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T15:40:28.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CartAndDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\DTOs\\cartDTO\\CartAndDetailsDTO.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\DTOs\\cartDTO\\CartAndDetailsDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\DTOs\\cartDTO\\CartAndDetailsDTO.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\models\\DTOs\\cartDTO\\CartAndDetailsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:33:02.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\CartService.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\CartService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\CartService.cs",
               "RelativeToolTip": "FoodDeliveryWebApp\\services\\CartService.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAiwC0AAAANAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAgwGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:21:40.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICartService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\interfaces\\ICartService.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\interfaces\\ICartService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\interfaces\\ICartService.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\interfaces\\ICartService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:19:46.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartDetailsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\CartDetailsRepository.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\CartDetailsRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\CartDetailsRepository.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\CartDetailsRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAtwBYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:48:12.452Z",
+              "WhenOpened": "2024-05-29T17:11:34.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CartDetails.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\CartDetails.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\CartDetails.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\CartDetails.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\models\\CartDetails.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwA8AAAAmAAAA",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\OrderService.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\OrderService.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\services\\OrderService.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:41:11.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Cart.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\Cart.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Cart.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\models\\Cart.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwAgAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:39:59.143Z",
+              "WhenOpened": "2024-05-29T17:11:16.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CartRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\CartRepository.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\CartRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\CartRepository.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\CartRepository.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAswCYAAAAMAAAA",
+              "Title": "CartDetailsTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\repositorytests\\CartDetailsTest.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryAppTests\\repositorytests\\CartDetailsTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\repositorytests\\CartDetailsTest.cs",
+              "RelativeToolTip": "FoodDeliveryAppTests\\repositorytests\\CartDetailsTest.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAswHoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:45:43.01Z",
+              "WhenOpened": "2024-05-29T17:09:45.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MenuRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAADgAAAAJAAAA",
+              "DocumentIndex": 0,
+              "Title": "CartServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "RelativeToolTip": "FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIIAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:57:50.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAkwFQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:05:04.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdminServices.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\AdminServices.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\AdminServices.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\AdminServices.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\services\\AdminServices.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwDoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T16:52:19.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FoodAppContext.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\context\\FoodAppContext.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\context\\FoodAppContext.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\context\\FoodAppContext.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\context\\FoodAppContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:05:59.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Program.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\Program.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAwwFcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:30:30.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\UserRepository.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\UserRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowBQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T11:42:06.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\UserController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAkwEcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:34:34.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterLoginService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\RegisterLoginService.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\RegisterLoginService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\Genspark-trainings\\dotnet-trainings\\console-spplications\\day30\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\RegisterLoginService.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\services\\RegisterLoginService.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAQwBoAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:09:03.995Z",
+              "WhenOpened": "2024-05-29T07:27:15.742Z",
               "EditorCaption": ""
             }
           ]

@@ -11,6 +11,7 @@ namespace FoodDeliveryWebApp.repositories
 
         private FoodAppContext _context;
 
+        
         public UserRepository(FoodAppContext context)
         {
             _context = context;
