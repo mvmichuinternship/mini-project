@@ -41,10 +41,7 @@ namespace FoodDeliveryWebApp.repositories
             return (await _context.CartDetails.SingleOrDefaultAsync(u => u.CartDetailsId == key));
         }
 
-        public async Task<CartDetails> GetByCartId(int key)
-        {
-            return (await _context.CartDetails.SingleOrDefaultAsync(u => u.CartId == key)) ;
-        }
+       
         
         public async Task<IEnumerable<CartDetails>> GetallByCartId(int key)
         {

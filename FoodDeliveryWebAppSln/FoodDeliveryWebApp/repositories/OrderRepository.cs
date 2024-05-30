@@ -18,8 +18,14 @@ namespace FoodDeliveryWebApp.repositories
         {
 
             _context.Add(item);
-            await _context.SaveChangesAsync();
-            return item;
+            var res = await _context.SaveChangesAsync();
+            if (res != null)
+            {
+
+                return item;
+            }
+            else
+                throw new UnableToRegisterException("Unable to add to order at the moment");
         }
 
         public async Task<Order> Delete(int key)

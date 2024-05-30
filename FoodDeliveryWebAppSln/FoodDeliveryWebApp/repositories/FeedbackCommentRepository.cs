@@ -16,10 +16,11 @@ namespace FoodDeliveryWebApp.repositories
         }
         public async Task<FbComment> Add(FbComment item)
         {
-
             _context.Add(item);
             await _context.SaveChangesAsync();
             return item;
+
+            
         }
 
         public async Task<FbComment> Delete(int key)

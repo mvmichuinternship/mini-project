@@ -33,7 +33,7 @@ namespace FoodDeliveryAppTests.repositorytests
                 CommentId = 1,
                 AdminId = 1,
                 FbId = 1,
-
+                CommentText="something"
             };
             var result = await repository.Add(menu);
             Assert.That(result.CommentId, Is.EqualTo(1));
@@ -47,7 +47,7 @@ namespace FoodDeliveryAppTests.repositorytests
             {
                 CommentId = 2,
                 AdminId = 1,
-                FbId = 1,
+                FbId = 2,
             };
             var repo = await repository.Add(menu);
             var result = await repository.Delete(repo.CommentId);
@@ -73,7 +73,7 @@ namespace FoodDeliveryAppTests.repositorytests
             {
                 CommentId = 4,
                 AdminId = 1,
-                FbId = 1,
+                FbId = 3,
             }; ;
 
             var rep = await repository.Add(menu);
@@ -89,7 +89,7 @@ namespace FoodDeliveryAppTests.repositorytests
             {
                 CommentId = 5,
                 AdminId = 1,
-                FbId = 1,
+                FbId = 4,
             }; ;
 
             var rep = await repository.Add(menu);
@@ -107,7 +107,7 @@ namespace FoodDeliveryAppTests.repositorytests
             {
                 CommentId = 6,
                 AdminId = 1,
-                FbId = 1,
+                FbId = 6,
             }; ;
 
             var rep = await repository.Add(menu);

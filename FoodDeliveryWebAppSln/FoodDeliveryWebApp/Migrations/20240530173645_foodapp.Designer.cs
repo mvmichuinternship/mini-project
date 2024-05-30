@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodDeliveryWebApp.Migrations
 {
     [DbContext(typeof(FoodAppContext))]
-    [Migration("20240526164943_Cart_Updated")]
-    partial class Cart_Updated
+    [Migration("20240530173645_foodapp")]
+    partial class foodapp
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -121,6 +121,65 @@ namespace FoodDeliveryWebApp.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("FoodDeliveryWebApp.models.FbComment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
+
+                    b.Property<int>("AdminId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CommentText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FbId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CommentId");
+
+                    b.ToTable("FbComments");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Feedback", b =>
+                {
+                    b.Property<int>("FbId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FbId"), 1L, 1);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("FbCommentCommentId")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Rating")
+                        .HasColumnType("real");
+
+                    b.HasKey("FbId");
+
+                    b.HasIndex("CommentId");
+
+                    b.HasIndex("FbCommentCommentId");
+
+                    b.ToTable("Feedbacks");
+                });
+
             modelBuilder.Entity("FoodDeliveryWebApp.models.Menu", b =>
                 {
                     b.Property<int>("FId")
@@ -142,6 +201,95 @@ namespace FoodDeliveryWebApp.Migrations
                     b.HasKey("FId");
 
                     b.ToTable("Menus");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Order", b =>
+                {
+                    b.Property<int>("OId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("OId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.OrderDetails", b =>
+                {
+                    b.Property<int>("OrderDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderDetailsId"), 1L, 1);
+
+                    b.Property<int>("FId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MenuFId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrderOId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Qty_ordered")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Total")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderDetailsId");
+
+                    b.HasIndex("MenuFId");
+
+                    b.HasIndex("OrderOId");
+
+                    b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Payment", b =>
+                {
+                    b.Property<int>("PayId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PayId"), 1L, 1);
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PayId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>
@@ -213,6 +361,56 @@ namespace FoodDeliveryWebApp.Migrations
                     b.Navigation("Menu");
                 });
 
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Feedback", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Menu", "Menu")
+                        .WithMany()
+                        .HasForeignKey("CommentId");
+
+                    b.HasOne("FoodDeliveryWebApp.models.FbComment", "FbComment")
+                        .WithMany()
+                        .HasForeignKey("FbCommentCommentId");
+
+                    b.Navigation("FbComment");
+
+                    b.Navigation("Menu");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Order", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.OrderDetails", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Menu", "Menu")
+                        .WithMany()
+                        .HasForeignKey("MenuFId");
+
+                    b.HasOne("FoodDeliveryWebApp.models.Order", null)
+                        .WithMany("Details")
+                        .HasForeignKey("OrderOId");
+
+                    b.Navigation("Menu");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Payment", b =>
+                {
+                    b.HasOne("FoodDeliveryWebApp.models.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("FoodDeliveryWebApp.models.User", b =>
                 {
                     b.HasOne("FoodDeliveryWebApp.models.Admin", "Admin")
@@ -231,6 +429,11 @@ namespace FoodDeliveryWebApp.Migrations
             modelBuilder.Entity("FoodDeliveryWebApp.models.Cart", b =>
                 {
                     b.Navigation("CartDetails");
+                });
+
+            modelBuilder.Entity("FoodDeliveryWebApp.models.Order", b =>
+                {
+                    b.Navigation("Details");
                 });
 #pragma warning restore 612, 618
         }

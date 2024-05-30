@@ -5,6 +5,8 @@ select * from cartDetails
 select * from admins
 select * from customers
 select * from orders
+select * from feedbacks
+select * from FbComments
 
 drop table payments
 delete from carts where CartId=1

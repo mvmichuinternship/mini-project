@@ -3,14 +3,16 @@
 namespace FoodDeliveryWebApp.exceptions
 {
     [Serializable]
-    internal class UnauthorizedUserException : Exception
+    public class UnauthorizedUserException : Exception
     {
+        string msg;
         public UnauthorizedUserException()
         {
         }
 
         public UnauthorizedUserException(string? message) : base(message)
         {
+            msg = message;
         }
 
         public UnauthorizedUserException(string? message, Exception? innerException) : base(message, innerException)
@@ -20,5 +22,7 @@ namespace FoodDeliveryWebApp.exceptions
         protected UnauthorizedUserException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
+        public override string Message => msg;
+
     }
 }

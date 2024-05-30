@@ -61,15 +61,9 @@ namespace FoodDeliveryAppTests.repositorytests
             {
                 IRepository<int, Admin> repository = new AdminRepository(context);
 
-                Admin admin2 = new Admin()
-                {
-                    Id = 1,
-                    Phone = "1234567890",
-                    Name = "vk",
-                    Role = "Admin",
-                };
-            var result = await repository.Get(admin2.Id);
-            result.Phone = admin2.Phone;
+                
+            var result = await repository.Get(1);
+            result.Phone = "1234567890";
                 var res = await repository.Update(result);
                 Assert.AreEqual(1, res.Id);
             }

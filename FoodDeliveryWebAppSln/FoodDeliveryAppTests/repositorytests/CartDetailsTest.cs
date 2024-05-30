@@ -106,23 +106,7 @@ namespace FoodDeliveryAppTests.repositorytests
         }
 
 
-        [Test]
-        public async Task GetByCIdTest()
-        {
-            CartDetailsRepository repository = new CartDetailsRepository(context);
-            CartDetails menu = new CartDetails()
-            {
-                CartDetailsId = 6,
-                CartId = 1,
-                FId = 1,
-                Qty_ordered = 2,
-                Total = 60
-            }; ;
-
-            var rep = await repository.Add(menu);
-            var result = await repository.GetByCartId(rep.CartId);
-            Assert.IsNotNull(result);
-        }
+      
 
 
         [Test]

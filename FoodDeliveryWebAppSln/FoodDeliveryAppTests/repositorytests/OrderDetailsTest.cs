@@ -107,23 +107,7 @@ namespace FoodDeliveryAppTests.repositorytests
         }
 
 
-        [Test]
-        public async Task GetByOIdAllTest()
-        {
-            OrderDetailsRepository repository = new OrderDetailsRepository(context);
-            OrderDetails menu = new OrderDetails()
-            {
-                OrderDetailsId = 8,
-                OId = 1,
-                FId = 1,
-                Qty_ordered = 2,
-                Total = 60
-            }; ;
-
-            var rep = await repository.Add(menu);
-            var result = await repository.GetByOrderId(rep.OId);
-            Assert.IsNotNull(result);
-        }
+    
 
 
         [Test]

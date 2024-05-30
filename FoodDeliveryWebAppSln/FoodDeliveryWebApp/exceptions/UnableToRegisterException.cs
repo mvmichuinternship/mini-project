@@ -3,15 +3,16 @@
 namespace FoodDeliveryWebApp.exceptions
 {
     [Serializable]
-    internal class UnableToRegisterException : Exception
+    public class UnableToRegisterException : Exception
     {
-        
+        string msg;
         public UnableToRegisterException()
         {
         }
 
         public UnableToRegisterException(string? message) : base(message)
         {
+            msg = $"{message}";
         }
 
         public UnableToRegisterException(string? message, Exception? innerException) : base(message, innerException)
@@ -21,5 +22,8 @@ namespace FoodDeliveryWebApp.exceptions
         protected UnableToRegisterException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
+
+        public override string Message => msg;
+
     }
 }

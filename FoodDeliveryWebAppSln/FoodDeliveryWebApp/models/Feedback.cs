@@ -12,7 +12,7 @@ namespace FoodDeliveryWebApp.models
         [ForeignKey("CustomerId")]
         public int FId {  get; set; }
         [ForeignKey("FId")]
-        public int Rating {  get; set; }
+        public float Rating {  get; set; }
         public int? CommentId { get; set; }
         [ForeignKey("CommentId")]
 

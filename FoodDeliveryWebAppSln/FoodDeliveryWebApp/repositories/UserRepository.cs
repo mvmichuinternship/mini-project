@@ -38,7 +38,7 @@ namespace FoodDeliveryWebApp.repositories
 
         public async Task<User> Get(int key)
         {
-            return (await _context.Users.SingleOrDefaultAsync(u => u.Id == key)) ?? throw new NoId("No user with the given ID");
+            return (await _context.Users.SingleOrDefaultAsync(u => u.Id == key)) ?? null;
         }
 
         public async Task<IEnumerable<User>> GetAll()

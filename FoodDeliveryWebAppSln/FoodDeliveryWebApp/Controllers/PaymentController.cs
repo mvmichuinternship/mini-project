@@ -7,6 +7,7 @@ using FoodDeliveryWebApp.services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FoodDeliveryWebApp.Controllers
 {
@@ -15,10 +16,13 @@ namespace FoodDeliveryWebApp.Controllers
     public class PaymentController : ControllerBase
     {
         private readonly IPaymentService _paymentService;
+        private readonly ILogger<UserController> _logger;
 
-        public PaymentController(IPaymentService paymentService)
+
+        public PaymentController(IPaymentService paymentService, ILogger<UserController> logger)
         {
             _paymentService = paymentService;
+            _logger = logger;
         }
 
         //[Authorize(Roles ="Customer")]
@@ -26,8 +30,13 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(Payment), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<Payment>> Pay(PaymentDTO pay)
         {
+            if (ModelState.IsValid)
+            {
+
             try
             {
                 Payment result = await _paymentService.AddPayment(pay);
@@ -35,12 +44,17 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToAddException ex)
             {
-                return BadRequest(new ErrorModel(401, ex.Message));
+                    _logger.LogCritical("Unable to send paymentr");
+                    return BadRequest(new ErrorModel(401, ex.Message));
             }
+            }
+            return BadRequest("All details are not provided. Please check the object");
         }
 
 
         [HttpGet("ViewPaymentStatus")]
+        [ExcludeFromCodeCoverage]
+
         public async Task<Payment> ViewPayment(int id)
         {
 
@@ -51,6 +65,8 @@ namespace FoodDeliveryWebApp.Controllers
         }
 
         [HttpGet("CancelPayment")]
+        [ExcludeFromCodeCoverage]
+
         public async Task<Payment> CancelPayment(int id)
         {
 

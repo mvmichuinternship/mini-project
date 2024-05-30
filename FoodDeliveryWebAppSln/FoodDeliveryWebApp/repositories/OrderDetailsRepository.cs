@@ -39,10 +39,7 @@ namespace FoodDeliveryWebApp.repositories
             return (await _context.OrderDetails.SingleOrDefaultAsync(u => u.OrderDetailsId == key));
         }
 
-        public async Task<OrderDetails> GetByOrderId(int key)
-        {
-            return (await _context.OrderDetails.SingleOrDefaultAsync(u => u.OId == key));
-        }
+        
 
         public async Task<IEnumerable<OrderDetails>> GetallByOrderId(int key)
         {

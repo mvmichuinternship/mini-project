@@ -39,33 +39,33 @@ namespace FoodDeliveryWebApp.services
         {
             try
             {
-                Cart cartid = await _cartRepository.Get( orderAndDetailsDTO.CartId );
-                Order orderid = new Order() { OId=orderAndDetailsDTO.OId, CartId= cartid.CartId, CustomerId=cartid.CustomerId, Status="Confirmed"};
-                var order = await _orderRepository.Add(orderid);
-                //IEnumerable<CartDetails> cartinfo = new List<CartDetails>() ;
-                IEnumerable<CartDetails> cd = await _directCdRepo.GetallByCartId(order.CartId);
-                int sumtotal = 0;
+                Cart cartid = await _cartRepository.Get(orderAndDetailsDTO.CartId);                
+                    Order orderid = new Order() { OId = orderAndDetailsDTO.OId, CartId = cartid.CartId, CustomerId = cartid.CustomerId, Status = "Confirmed" };
+                    var order = await _orderRepository.Add(orderid);
+                    //IEnumerable<CartDetails> cartinfo = new List<CartDetails>() ;
+                    IEnumerable<CartDetails> cd = await _directCdRepo.GetallByCartId(order.CartId);
+                    int sumtotal = 0;
 
-                OrderDetails newOrderDetails;
-                OrderDetails orderdetails;
-                foreach (var cartdetails in cd )
-                {
-                 newOrderDetails = MapOrderDTOToDetails( orderAndDetailsDTO.OId, cartdetails.FId, cartdetails.Total, cartdetails.Qty_ordered);
-                     orderdetails = await _orderDetailsRepository.Add( newOrderDetails );
-                    sumtotal += newOrderDetails.Total;
-                    var updatingStock = await _adminService.UpdateStock(newOrderDetails.FId, newOrderDetails.Qty_ordered);
-                }
-                if(order.Status =="Confirmed")
-                {
-                    var deletion = await _orderService.DeleteCart(order.CartId);
-                }
-
+                    OrderDetails newOrderDetails;
+                    OrderDetails orderdetails;
+                    foreach (var cartdetails in cd)
+                    {
+                        newOrderDetails = MapOrderDTOToDetails(orderAndDetailsDTO.OId, cartdetails.FId, cartdetails.Total, cartdetails.Qty_ordered);
+                        orderdetails = await _orderDetailsRepository.Add(newOrderDetails);
+                        sumtotal += newOrderDetails.Total;
+                        var updatingStock = await _adminService.UpdateStock(newOrderDetails.FId, newOrderDetails.Qty_ordered);
+                    }
+                    if (order.Status == "Confirmed")
+                    {
+                        var deletion = await _orderService.DeleteCart(order.CartId);
+                    }
+                
                 return ("Successfully placed order");
                
             }
             catch (Exception ex)
             {
-                throw new UnableToRegisterException("Unable to add to order at the moment", ex);
+                throw new UnableToRegisterException("Unable to add to order at the moment");
             }
         }
 

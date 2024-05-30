@@ -24,20 +24,25 @@ namespace FoodDeliveryWebApp.services
         public async Task<Payment> AddPayment (PaymentDTO payment)
         { 
             Order order_id = await _orderRepository.Get(payment.OId);
-            OrderDetails order_details = await _directOdRepo.GetByOrderId(payment.OId);
-            Payment pay = MapOrderToPayment(order_details, order_id, payment);
+            IEnumerable<OrderDetails> order_details = await _directOdRepo.GetallByOrderId(payment.OId);
+            int total = 0;
+            foreach(OrderDetails details in order_details)
+            {
+                total+= details.Total;
+            }
+            Payment pay = MapOrderToPayment(total, order_id, payment);
             pay = await _payRepository.Add(pay);
             return pay;
         }
 
-        private Payment MapOrderToPayment(OrderDetails order_details, Order order_id, PaymentDTO pay)
+        private Payment MapOrderToPayment(int total, Order order_id, PaymentDTO pay)
         {
             Payment payment = new Payment();
             payment.OId = order_id.OId;
             payment.CustomerId = order_id.CustomerId;
             payment.PaymentMethod = pay.PaymentMethod;
             payment.Status = "Paid";
-            payment.Amount = order_details.Total;
+            payment.Amount = total;
             return payment;
         }
 

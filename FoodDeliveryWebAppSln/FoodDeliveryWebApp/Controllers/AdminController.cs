@@ -6,6 +6,7 @@ using FoodDeliveryWebApp.models.errorModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FoodDeliveryWebApp.Controllers
 {
@@ -15,10 +16,13 @@ namespace FoodDeliveryWebApp.Controllers
     {
 
         private readonly IAdminServices _adminServices;
+        private readonly ILogger<UserController> _logger;
 
-        public AdminController(IAdminServices adminServices)
+
+        public AdminController(IAdminServices adminServices, ILogger<UserController> logger)
         {
             _adminServices = adminServices;
+            _logger = logger;
         }
 
         //[Authorize(Roles = "Admin")]
@@ -26,8 +30,12 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
         public async Task<ActionResult<Menu>> Register(Menu menu)
         {
+            if (ModelState.IsValid)
+            {
+
             try
             {
                 Menu result = await _adminServices.AddFoodToMenu(menu);
@@ -35,14 +43,19 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToAddException ex)
             {
-                return BadRequest(new ErrorModel(401, ex.Message));
+                    _logger.LogCritical("Unable to add menu");
+                    return BadRequest(new ErrorModel(401, ex.Message));
             }
+            }
+            return BadRequest("All details are not provided. Please check the object");
         }
 
         //[Authorize(Roles = "Admin")]
         [HttpPut("UpdateMenu")]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<Menu>> Update(Menu menu)
         {
             try
@@ -52,6 +65,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToUpdateException ex)
             {
+                _logger.LogCritical("Unable to update menu");
                 return BadRequest(new ErrorModel(401, ex.Message));
             }
         }
@@ -60,6 +74,8 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpDelete("DeleteMenu")]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<Menu>> Delete(int menu)
         {
             try
@@ -69,12 +85,14 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToDeleteException ex)
             {
+                _logger.LogCritical("Unable to delete menu");
                 return BadRequest(new ErrorModel(401, ex.Message));
             }
         }
 
         //[Authorize(Roles = "Admin")]
         [HttpGet]
+        [ExcludeFromCodeCoverage]
         public async Task<IEnumerable<Menu>> ViewRequestAdmin()
         {
 

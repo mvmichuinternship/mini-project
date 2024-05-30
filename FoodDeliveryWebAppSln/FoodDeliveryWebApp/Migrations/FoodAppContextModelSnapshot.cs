@@ -166,8 +166,8 @@ namespace FoodDeliveryWebApp.Migrations
                     b.Property<int?>("FbCommentCommentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
+                    b.Property<float>("Rating")
+                        .HasColumnType("real");
 
                     b.HasKey("FbId");
 

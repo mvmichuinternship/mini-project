@@ -3,14 +3,16 @@
 namespace FoodDeliveryWebApp.exceptions
 {
     [Serializable]
-    internal class UnableToUpdateException : Exception
+    public class UnableToUpdateException : Exception
     {
+        string msg;
         public UnableToUpdateException()
         {
         }
 
         public UnableToUpdateException(string? message) : base(message)
         {
+            msg = message;
         }
 
         public UnableToUpdateException(string? message, Exception? innerException) : base(message, innerException)
@@ -20,5 +22,8 @@ namespace FoodDeliveryWebApp.exceptions
         protected UnableToUpdateException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
+
+        public override string Message => msg;
+
     }
 }

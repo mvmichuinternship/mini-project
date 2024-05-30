@@ -6,6 +6,7 @@ using FoodDeliveryWebApp.models.errorModel;
 using FoodDeliveryWebApp.services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FoodDeliveryWebApp.Controllers
 {
@@ -15,17 +16,25 @@ namespace FoodDeliveryWebApp.Controllers
     {
 
         private readonly IFeedbackService _feedbackService;
+        private readonly ILogger<UserController> _logger;
 
-        public FeedbackController(IFeedbackService feedbackService)
+
+        public FeedbackController(IFeedbackService feedbackService, ILogger<UserController> logger)
         {
             _feedbackService = feedbackService;
+            _logger = logger;
         }
 
         [HttpPost("SendFeedback")]
         [ProducesResponseType(typeof(Feedback), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<Feedback>> Register(Feedback fb)
         {
+            if (ModelState.IsValid)
+            {
+
             try
             {
                 Feedback result = await _feedbackService.SendFeedback(fb);
@@ -33,8 +42,11 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToAddException ex)
             {
-                return BadRequest(new ErrorModel(401, ex.Message));
+                    _logger.LogCritical("Unable to send feedback");
+                    return BadRequest(new ErrorModel(401, ex.Message));
             }
+            }
+            return BadRequest("All details are not provided. Please check the object");
         }
 
 
@@ -42,8 +54,13 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpPost("SendFeedbackComment")]
         [ProducesResponseType(typeof(FbComment), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<FbComment>> AddFbComment(FbComment fb)
         {
+            if (ModelState.IsValid)
+            {
+
             try
             {
                 FbComment result = await _feedbackService.AddComment(fb);
@@ -51,8 +68,11 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToAddException ex)
             {
-                return BadRequest(new ErrorModel(401, ex.Message));
+                    _logger.LogCritical("Unable to reply to feedback");
+                    return BadRequest(new ErrorModel(401, ex.Message));
             }
+            }
+            return BadRequest("All details are not provided. Please check the object");
         }
 
 
@@ -60,6 +80,8 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpDelete("DeleteFeedback")]
         [ProducesResponseType(typeof(Feedback), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<Feedback>> Delete(int id)
         {
             try
@@ -69,6 +91,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToDeleteException ex)
             {
+                _logger.LogCritical("Unable to delete feedback");
                 return BadRequest(new ErrorModel(401, ex.Message));
             }
         }
@@ -77,6 +100,8 @@ namespace FoodDeliveryWebApp.Controllers
         [HttpDelete("DeleteFeedbackComment")]
         [ProducesResponseType(typeof(FbComment), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        [ExcludeFromCodeCoverage]
+
         public async Task<ActionResult<FbComment>> DeleteCommentFb(int id)
         {
             try
@@ -86,6 +111,7 @@ namespace FoodDeliveryWebApp.Controllers
             }
             catch (UnableToDeleteException ex)
             {
+                _logger.LogCritical("Unable to delete reply");
                 return BadRequest(new ErrorModel(401, ex.Message));
             }
         }

@@ -19,7 +19,7 @@ namespace FoodDeliveryWebApp.repositories
         {
 
             _context.Add(item);
-            await _context.SaveChangesAsync();
+            var res = await _context.SaveChangesAsync();
             return item;
         }
 
@@ -37,7 +37,7 @@ namespace FoodDeliveryWebApp.repositories
 
         public async Task<Admin> Get(int key)
         {
-            return (await _context.Admins.SingleOrDefaultAsync(u => u.Id == key)) ?? throw new NoId("No user with the given ID");
+            return (await _context.Admins.SingleOrDefaultAsync(u => u.Id == key)) ?? null;
         }
 
         public async Task<IEnumerable<Admin>> GetAll()

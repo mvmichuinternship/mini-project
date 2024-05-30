@@ -39,9 +39,7 @@ namespace FoodDeliveryWebApp.services
                 var user = await _userRepo.Get(loginAdminDTO.UserId);
                 LoginTokenDTO loginReturnDTO = MapEmployeeToLoginReturn(user);
                 return loginReturnDTO;
-                //if (userDB.Status == "Active")
-                //    return employee;
-                throw new UserNotActiveException("Your account is not activated");
+               
             }
             throw new UnauthorizedUserException("Invalid username or password");
         }
@@ -85,12 +83,18 @@ namespace FoodDeliveryWebApp.services
                 ((RegisterAdminDTO)admin).APassword = string.Empty;
                 return admin;
             }
-            catch (Exception) { }
+            catch  {
+
             if (admin != null)
+            {
                 await RevertAdminInsert(admin);
+            }
             if (user != null && admin == null)
+            {
                 await RevertUserInsert(user);
+            }
             throw new UnableToAddException("Not able to register at this moment");
+            }
         }
 
         private async Task RevertUserInsert(User user)
@@ -131,12 +135,18 @@ namespace FoodDeliveryWebApp.services
                 ((RegisterCustomerDTO)customer).CPassword = string.Empty;
                 return customer;
             }
-            catch (Exception) { }
-            if (customer != null)
-                await RevertCustomerInsert(customer);
-            if (user != null && customer == null)
-                await RevertUserInsert(user);
-            throw new UnableToAddException("Not able to register at this moment");
+            catch 
+            {
+                if (customer != null)
+                {
+                    await RevertCustomerInsert(customer);
+                }
+                if (user != null && customer != null)
+                {
+                    await RevertUserInsert(user);
+                }
+                throw new UnableToAddException("Not able to register at this moment");
+            }
         }
 
         //private async Task RevertUserInsert(User user)

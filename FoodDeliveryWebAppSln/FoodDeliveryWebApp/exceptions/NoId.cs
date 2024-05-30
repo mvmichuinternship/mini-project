@@ -3,14 +3,17 @@
 namespace FoodDeliveryWebApp.exceptions
 {
     [Serializable]
-    internal class NoId : Exception
+    public class NoId : Exception
     {
+        string msg;
         public NoId()
         {
+             msg = string.Empty;
         }
 
         public NoId(string? message) : base(message)
         {
+            msg = $"{message}";
         }
 
         public NoId(string? message, Exception? innerException) : base(message, innerException)
@@ -20,5 +23,6 @@ namespace FoodDeliveryWebApp.exceptions
         protected NoId(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
+        public override string Message => msg;
     }
 }

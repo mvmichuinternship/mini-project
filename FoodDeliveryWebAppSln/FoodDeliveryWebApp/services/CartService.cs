@@ -68,25 +68,67 @@ namespace FoodDeliveryWebApp.services
         //    }
 
 
+        //public async Task<CartDetails> AddCartAndDetails(CartAndDetailsDTO cartAndDetailsDTO)
+        //{
+        //    CartDetails newCartDetails=null;
+        //    try
+        //    {
+        //        Cart cart = await _cartRepository.Get(cartAndDetailsDTO.CartId);
+        //        if (cart != null)
+        //        {
+        //            cart = await _cartRepository.Update(cartAndDetailsDTO);
+        //        }
+        //        else
+        //        {
+        //            cart = await _cartRepository.Add(cartAndDetailsDTO); 
+        //        }
+        //        CartDetails existingCartDetails = await _directCdRepo.GetByCartId(cartAndDetailsDTO.CartId);
+
+        //        Menu menu = await _menuRepository.Get(cartAndDetailsDTO.FId);
+
+        //        newCartDetails = MapCartDTOToDetails(cartAndDetailsDTO, existingCartDetails?.Total ?? 0, menu.UnitPrice);
+
+        //        newCartDetails.CartId = cart.CartId;
+
+        //        newCartDetails = await _cartDetailsRepository.Add(newCartDetails);
+
+        //        return newCartDetails;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        if(newCartDetails != null)
+        //        {
+
+        //        await RevertCartDetailsInsert(newCartDetails);
+        //        }
+        //        await RevertCartInsert(cartAndDetailsDTO);
+        //        throw new UnableToRegisterException("Unable to add to cart at the moment", ex);
+        //    }
+        //}
+
         public async Task<CartDetails> AddCartAndDetails(CartAndDetailsDTO cartAndDetailsDTO)
         {
-            CartDetails newCartDetails=null;
+            CartDetails newCartDetails= null;
             try
             {
                 Cart cart = await _cartRepository.Get(cartAndDetailsDTO.CartId);
                 if (cart != null)
                 {
-                    cart = await _cartRepository.Update(cartAndDetailsDTO);
+                    cart = await _cartRepository.Update(cart);
                 }
                 else
                 {
-                    cart = await _cartRepository.Add(cartAndDetailsDTO); 
+                    cart = await _cartRepository.Add(cartAndDetailsDTO);
                 }
-                CartDetails existingCartDetails = await _directCdRepo.GetByCartId(cartAndDetailsDTO.CartId);
-
+                IEnumerable<CartDetails> existingCartDetails = await _directCdRepo.GetallByCartId(cartAndDetailsDTO.CartId);
+                int total = 0;
+                foreach (CartDetails details in existingCartDetails)
+                {
+                    total += details.Total;
+                }
                 Menu menu = await _menuRepository.Get(cartAndDetailsDTO.FId);
 
-                newCartDetails = MapCartDTOToDetails(cartAndDetailsDTO, existingCartDetails?.Total ?? 0, menu.UnitPrice);
+                newCartDetails = MapCartDTOToDetails(cartAndDetailsDTO, total, menu.UnitPrice);
 
                 newCartDetails.CartId = cart.CartId;
 
@@ -96,25 +138,20 @@ namespace FoodDeliveryWebApp.services
             }
             catch (Exception ex)
             {
-                if(newCartDetails != null)
-                {
-
-                await RevertCartDetailsInsert(newCartDetails);
-                }
-                await RevertCartInsert(cartAndDetailsDTO);
+                await RevertCartInsert(cartAndDetailsDTO.CartId);
+                await RevertCartDetailsInsert(newCartDetails.CartDetailsId);
                 throw new UnableToRegisterException("Unable to add to cart at the moment", ex);
             }
         }
 
-
-        private async Task RevertCartInsert(Cart admin)
+        private async Task RevertCartInsert(int admin)
         {
-            await _cartRepository.Delete(admin.CartId);
+            await _cartRepository.Delete(admin);
         }
 
-        private async Task RevertCartDetailsInsert(CartDetails admin)
+        private async Task RevertCartDetailsInsert(int cartdetailsid)
         {
-            await _cartDetailsRepository.Delete(admin.CartDetailsId);
+            await _cartDetailsRepository.Delete(cartdetailsid);
         }
 
         private CartDetails MapCartDTOToDetails(CartAndDetailsDTO cartAndDetailsDTO, int total, int price)

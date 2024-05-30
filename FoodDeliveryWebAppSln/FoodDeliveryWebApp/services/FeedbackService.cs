@@ -1,6 +1,5 @@
 ﻿using FoodDeliveryWebApp.exceptions;
 using FoodDeliveryWebApp.interfaces;
-using FoodDeliveryWebApp.Migrations;
 using FoodDeliveryWebApp.models;
 using FoodDeliveryWebApp.repositories;
 
@@ -21,12 +20,18 @@ namespace FoodDeliveryWebApp.services
 
         public async Task<FbComment> AddComment(FbComment comment)
         {
-            FbComment fbComment = await _fbCommentRepository.Add(comment);
-            if(fbComment != null)
+            try
             {
+
+            FbComment fbComment = await _fbCommentRepository.Add(comment);
+                Feedback fb = await _feedbackRepository.Get(comment.FbId);
+                fb.CommentId= comment.CommentId;
+                var res = await _feedbackRepository.Update(fb);
+            
                 return fbComment;
+            
             }
-            else
+            catch  
             {
                 throw new UnableToAddException("Unable to reply to feedback");
             }
@@ -34,14 +39,18 @@ namespace FoodDeliveryWebApp.services
 
         public async Task<FbComment> DeleteComment(int id)
         {
+            try
+            {
+
             FbComment fbCommentid = await _feedbackCommentRepository.GetByFbId(id);
 
-            if (fbCommentid == null)
-            {
+            //if (fbCommentid == null)
+            //{
                 FbComment fbc = await _fbCommentRepository.Delete(fbCommentid.FbId);
                 return fbc;
+            //}
             }
-            else
+            catch
             {
                 throw new UnableToDeleteException("Unable to delete reply to feedback");
             }
@@ -49,13 +58,18 @@ namespace FoodDeliveryWebApp.services
 
         public async Task<Feedback> DeleteFeedback(int id)
         {
-            Feedback fb = await _feedbackRepository.Delete(id);
-            if (fb != null)
+            try
             {
 
+            FbComment commentId =  await _feedbackCommentRepository.GetByFbId(id);
+            FbComment fbComment = await _feedbackCommentRepository.Delete(commentId.CommentId);
+            Feedback fb = await _feedbackRepository.Delete(id);
+            
+
                 return fb;
+            
             }
-            else
+            catch
             {
                 throw new UnableToDeleteException("Unable to delete feedback");
             }

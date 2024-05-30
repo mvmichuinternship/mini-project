@@ -31,12 +31,12 @@ namespace FoodDeliveryWebApp.repositories
                 await _context.SaveChangesAsync();
                 return user;
             }
-            throw new NoId("No user with the given ID");
+            throw new UnableToDeleteException("Unable to delete feedback");
         }
 
         public async Task<Feedback> Get(int key)
         {
-            return (await _context.Feedbacks.SingleOrDefaultAsync(u => u.FbId == key)) ?? throw new NoId("No user with the given ID");
+            return (await _context.Feedbacks.SingleOrDefaultAsync(u => u.FbId == key)) ;
         }
 
         public async Task<IEnumerable<Feedback>> GetAll()
@@ -53,7 +53,7 @@ namespace FoodDeliveryWebApp.repositories
                 await _context.SaveChangesAsync();
                 return user;
             }
-            throw new NoId("No user with the given ID");
+            throw new UnableToUpdateException("Unable to update feedback");
         }
     }
 }
