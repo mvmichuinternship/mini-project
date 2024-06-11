@@ -16,10 +16,10 @@ namespace FoodDeliveryWebApp.Controllers
     {
 
         private readonly IFeedbackService _feedbackService;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<FeedbackController> _logger;
 
 
-        public FeedbackController(IFeedbackService feedbackService, ILogger<UserController> logger)
+        public FeedbackController(IFeedbackService feedbackService, ILogger<FeedbackController> logger)
         {
             _feedbackService = feedbackService;
             _logger = logger;

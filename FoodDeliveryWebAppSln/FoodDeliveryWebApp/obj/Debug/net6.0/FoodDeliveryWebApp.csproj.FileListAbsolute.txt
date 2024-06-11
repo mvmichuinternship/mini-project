@@ -140,3 +140,5 @@ C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\De
 C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\FoodDeliveryWebApp.pdb
 C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\FoodDeliveryWebApp.genruntimeconfig.cache
 C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\obj\Debug\net6.0\ref\FoodDeliveryWebApp.dll
+C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\bin\Debug\net6.0\log4net.dll
+C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

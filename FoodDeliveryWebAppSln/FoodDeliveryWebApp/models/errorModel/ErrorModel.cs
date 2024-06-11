@@ -1,5 +1,8 @@
-﻿namespace FoodDeliveryWebApp.models.errorModel
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace FoodDeliveryWebApp.models.errorModel
 {
+    [ExcludeFromCodeCoverage]
     public class ErrorModel
     {
         int errorCode;

@@ -16,10 +16,10 @@ namespace FoodDeliveryWebApp.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderServices;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<OrderController> _logger;
 
 
-        public OrderController(IOrderService orderServices, ILogger<UserController> logger)
+        public OrderController(IOrderService orderServices, ILogger<OrderController> logger)
         {
             _orderServices = orderServices;
             _logger = logger;

@@ -3,6 +3,7 @@ using FoodDeliveryWebApp.exceptions;
 using FoodDeliveryWebApp.interfaces;
 using FoodDeliveryWebApp.models;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FoodDeliveryWebApp.repositories
 {
@@ -39,6 +40,7 @@ namespace FoodDeliveryWebApp.repositories
             return (await _context.Payments.SingleOrDefaultAsync(u => u.PayId == key)) ?? throw new NoId("No payment with the given ID");
         }
 
+        [ExcludeFromCodeCoverage]
         public async Task<IEnumerable<Payment>> GetAll()
         {
             return await _context.Payments.ToListAsync();

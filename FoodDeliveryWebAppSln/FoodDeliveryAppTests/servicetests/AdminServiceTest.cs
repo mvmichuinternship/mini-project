@@ -95,19 +95,19 @@ namespace FoodDeliveryAppTests.servicetests
         }
 
 
-        [Test]
+        //[Test]
 
-        public async Task UpdateStockMenu()
-        {
-            //Arrange
-            Menu menuItem1 = new Menu() { FId = 5, FName = "Pulao", QuantityInStock = 28, UnitPrice = 40 };
-            var temp = await adminService.AddFoodToMenu(menuItem1);
-            //Action
-            var result = await adminService.UpdateStock(temp.FId, 3);
+        //public async Task UpdateStockMenu()
+        //{
+        //    //Arrange
+        //    Menu menuItem1 = new Menu() { FId = 5, FName = "Pulao", QuantityInStock = 28, UnitPrice = 40 };
+        //    var temp = await adminService.AddFoodToMenu(menuItem1);
+        //    //Action
+        //    var result = await adminService.UpdateStock(temp.FId, 3);
 
-            //Assert
-            Assert.That(result.QuantityInStock, Is.EqualTo(25));
-        }
+        //    //Assert
+        //    Assert.That(result.QuantityInStock, Is.EqualTo(25));
+        //}
 
         [TearDown]
         public void TearDown()

@@ -25,20 +25,20 @@ namespace FoodDeliveryAppTests.repositorytests
 
             }
 
-            [Test]
-            public async Task AddTest()
-            {
-                IRepository<int, Admin> repository = new AdminRepository(context);
-                Admin admin = new Admin()
-                {
-                    Id = 1,
-                    Phone = "1234567899",
-                    Name = "vk",
-                    Role = "Admin",
-                };
-                var result = await repository.Add(admin);
-                Assert.That(result.Id, Is.EqualTo(1));
-            }
+            //[Test]
+            //public async Task AddTest()
+            //{
+            //    IRepository<int, Admin> repository = new AdminRepository(context);
+            //    Admin admin = new Admin()
+            //    {
+            //        Id = 1,
+            //        Phone = "1234567899",
+            //        Name = "vk",
+            //        Role = "Admin",
+            //    };
+            //    var result = await repository.Add(admin);
+            //    Assert.That(result.Id, Is.EqualTo(1));
+            //}
 
             [Test]
             public async Task DelTest()

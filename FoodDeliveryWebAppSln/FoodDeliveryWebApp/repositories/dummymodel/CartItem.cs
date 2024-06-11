@@ -1,5 +1,8 @@
-﻿namespace FoodDeliveryWebApp.repositories.dummymodel
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace FoodDeliveryWebApp.repositories.dummymodel
 {
+    [ExcludeFromCodeCoverage]
     public class CartItem
     {
         public int Fid { get; set; }

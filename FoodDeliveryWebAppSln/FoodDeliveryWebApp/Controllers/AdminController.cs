@@ -16,16 +16,16 @@ namespace FoodDeliveryWebApp.Controllers
     {
 
         private readonly IAdminServices _adminServices;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<AdminController> _logger;
 
 
-        public AdminController(IAdminServices adminServices, ILogger<UserController> logger)
+        public AdminController(IAdminServices adminServices, ILogger<AdminController> logger)
         {
             _adminServices = adminServices;
             _logger = logger;
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [Route("RegisterMenu")]
         [HttpPost]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
@@ -81,6 +81,7 @@ namespace FoodDeliveryWebApp.Controllers
             try
             {
                 Menu result = await _adminServices.DeleteMenu(menu);
+                _logger.LogInformation("Success");
                 return Ok(result);
             }
             catch (UnableToDeleteException ex)

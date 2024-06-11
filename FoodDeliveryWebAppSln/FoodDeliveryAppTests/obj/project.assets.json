@@ -1437,7 +1437,9 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.30",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.30",
-          "Swashbuckle.AspNetCore": "6.5.0"
+          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "6.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "log4net": "2.0.17"
         },
         "compile": {
           "bin/placeholder/FoodDeliveryWebApp.dll": {}

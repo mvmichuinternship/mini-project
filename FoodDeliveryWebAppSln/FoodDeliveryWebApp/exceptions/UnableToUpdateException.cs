@@ -1,8 +1,10 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Runtime.Serialization;
 
 namespace FoodDeliveryWebApp.exceptions
 {
     [Serializable]
+    [ExcludeFromCodeCoverage]
     public class UnableToUpdateException : Exception
     {
         string msg;

@@ -18,10 +18,10 @@ namespace FoodDeliveryWebApp.Controllers
     {
 
         private readonly ICartService _cartServices;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<CartController> _logger;
 
 
-        public CartController(ICartService cartServices, ILogger<UserController> logger)
+        public CartController(ICartService cartServices, ILogger<CartController> logger)
         {
             _cartServices = cartServices;
             _logger = logger;
