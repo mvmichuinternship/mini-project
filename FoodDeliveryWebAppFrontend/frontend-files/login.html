@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="w-full h-screen flex flex-col ">
+        <div class="flex justify-between items-center h-[11%] border-b-4 border-pink-500">
+            <div class="px-4 text-pink-500 text-4xl">
+                ELFY'S CAFETERIA
+            </div>
+        </div>
+        <div class=" h-auto my-10 self-center flex flex-col p-8 gap-y-4 items-center border border-pink-500 shadow-md rounded-md md:w-[40%] sm:w-[60%] w-[70%]">
+            <div class="px-4 text-pink-500 text-2xl ">
+                Login
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-4 w-[80%]">
+                <input type="text" placeholder="Enter User iId" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="text" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <select name="role" id="role" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer">Customer</option>
+                </select>
+            </div>
+            <button class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+                Login 
+            </button>
+        </div>
+    </div>
+</body>
+</html>
