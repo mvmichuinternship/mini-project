@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Add Menu</title>
+    <script>
+        const addFood=()=>{
+            const fName = document.getElementById('name').value;
+            const fprice = document.getElementById('price').value;
+            const fqty = document.getElementById('quantityInStock').value;
+            const fimg = document.getElementById('food-image').value;
+            const fDescription = document.getElementById('description').value;
+
+            fetch(`http://localhost:5023/api/Admin/RegisterMenu` , {
+          method: "POST",
+          headers: { 
+            "Authorization": "Bearer " + localStorage.getItem("token"),
+            "Content-Type" : "application/json"
+           },
+          body: JSON.stringify({
+           
+                "fName":fName,
+                "quantityInStock":fqty,
+                "unitPrice":fprice
+          
+          }),
+        })
+          .then((res) => {res.json(); console.log(res)})
+          .then(console.log);
+        }
+    </script>
+  </head>
+  <body >
+    <div class="flex h-screen w-full justify-around items-center">
+      <div
+        class="flex flex-col fixed top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
+      ></div>
+      <div class=" h-auto my-10 self-center flex flex-col p-8 gap-y-4 items-center border border-pink-500 shadow-md rounded-md md:w-[40%] sm:w-[60%] w-[70%]">
+        <div class="px-4 text-pink-500 text-2xl ">
+            Add Food
+        </div>
+        <div class="flex flex-col justify-center items-center gap-y-4 w-[80%]">
+            <input type="text" id="name" placeholder="Food Name" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+            <input type="text" id="description" placeholder="Description" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+            <input type="number" id="price" placeholder="Price" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+            <input type="number" id="quantityInStock" placeholder="Quantity in stock" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+            <input type="file" id="food-image" placeholder="Image" accept="image/png, image/jpeg" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs  px-3 py-1 " >
+           
+        </div>
+        <button onclick="addFood()" class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+            Add Food 
+        </button>
+    </div>
+    </div>
+  </body>
+</html>

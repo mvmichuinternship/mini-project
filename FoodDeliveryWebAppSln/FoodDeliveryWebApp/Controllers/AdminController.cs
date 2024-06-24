@@ -4,6 +4,7 @@ using FoodDeliveryWebApp.models;
 using FoodDeliveryWebApp.models.DTOs.registerDTOs;
 using FoodDeliveryWebApp.models.errorModel;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
@@ -25,7 +26,7 @@ namespace FoodDeliveryWebApp.Controllers
             _logger = logger;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [Route("RegisterMenu")]
         [HttpPost]
         [ProducesResponseType(typeof(Menu), StatusCodes.Status200OK)]
@@ -93,12 +94,25 @@ namespace FoodDeliveryWebApp.Controllers
 
         //[Authorize(Roles = "Admin")]
         [HttpGet]
+        [EnableCors]
         [ExcludeFromCodeCoverage]
         public async Task<IEnumerable<Menu>> ViewRequestAdmin()
         {
 
             var requestRaise = await _adminServices.GetAllMenus();
             return requestRaise.ToList();
+
+
+        }
+
+        [HttpGet("GetDish")]
+        [EnableCors]
+        [ExcludeFromCodeCoverage]
+        public async Task<Menu> GetDishAdmin(int menu)
+        {
+
+            var requestRaise = await _adminServices.GetDish(menu);
+            return requestRaise;
 
 
         }

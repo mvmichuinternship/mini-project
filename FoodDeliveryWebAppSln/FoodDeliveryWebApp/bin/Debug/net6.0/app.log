@@ -637,3 +637,1533 @@ FoodDeliveryWebApp.exceptions.UnableToRegisterException: Unable to add to order 
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  04:37:37 Now listening on: http://localhost:5023
+INFO  04:37:37 Application started. Press Ctrl+C to shut down.
+INFO  04:37:37 Hosting environment: Development
+INFO  04:37:37 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  04:42:24 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:42:25 Executed DbCommand (174ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:53:07 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:53:07 Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:55:09 Now listening on: http://localhost:5023
+INFO  04:55:09 Application started. Press Ctrl+C to shut down.
+INFO  04:55:09 Hosting environment: Development
+INFO  04:55:09 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  04:55:28 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:55:29 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:55:30 Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:55:30 Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:55:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:55:30 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:56:18 Now listening on: http://localhost:5023
+INFO  04:56:18 Application started. Press Ctrl+C to shut down.
+INFO  04:56:18 Hosting environment: Development
+INFO  04:56:18 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  04:56:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:56:32 Executed DbCommand (130ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  04:58:56 Now listening on: http://localhost:5023
+INFO  04:58:56 Application started. Press Ctrl+C to shut down.
+INFO  04:58:56 Hosting environment: Development
+INFO  04:58:56 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  04:59:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  04:59:16 Executed DbCommand (197ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  04:59:16 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:00:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:00:01 Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:00:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:00:10 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:03:05 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:03:05 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:03:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:03:13 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:05:19 Now listening on: http://localhost:5023
+INFO  05:05:19 Application started. Press Ctrl+C to shut down.
+INFO  05:05:19 Hosting environment: Development
+INFO  05:05:19 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  05:05:41 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:05:42 Executed DbCommand (118ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:06:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:06:34 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:06:51 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:06:51 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:07:17 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:07:17 Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:07:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:07:27 Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:07:44 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:07:44 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:08:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:08:00 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:09:02 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:09:02 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:09:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:09:14 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:09:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:09:32 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:10:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:10:23 Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:10:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:10:39 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:10:59 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:10:59 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:11:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:34 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:11:42 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:42 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:11:47 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:47 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:12:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:12:34 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:12:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:12:40 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:23 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:30 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:39 Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:40 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:40 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:40 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:49 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:14:57 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:14:57 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:15:20 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:15:20 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:15:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:15:46 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:16:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:16:53 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:17:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:17:04 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:17:22 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:17:22 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:17:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:17:34 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:17:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:17:54 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:18:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:18:00 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:18:05 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:18:05 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  02:54:32 Now listening on: http://localhost:5023
+INFO  02:54:32 Application started. Press Ctrl+C to shut down.
+INFO  02:54:32 Hosting environment: Development
+INFO  02:54:32 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  03:10:19 Now listening on: http://localhost:5023
+INFO  03:10:19 Application started. Press Ctrl+C to shut down.
+INFO  03:10:19 Hosting environment: Development
+INFO  03:10:19 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  03:13:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  03:13:27 Executed DbCommand (226ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Admins] ([Name], [Phone], [Role])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Admins]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+INFO  03:13:28 Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 8000) (DbType = Binary), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([AdminId], [CustomerId], [Name], [Password], [PasswordHashKey], [Phone], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+INFO  05:07:38 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:07:40 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:07:40 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:08:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:08:30 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:08:30 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:09:22 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:09:22 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:09:22 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:10:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:10:27 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:10:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:10:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:10:49 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:10:49 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:19 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:19 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:19 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:35 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:35 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:43 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:44 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:44 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:44 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:44 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:11:44 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:11:44 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:12:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:12:26 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:12:26 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  05:13:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:13:35 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:19:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:19:34 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:20:03 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:20:03 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:20:15 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:20:15 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:21:24 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:21:24 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:21:45 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:21:45 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:21:58 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:21:58 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:22:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:22:06 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:22:11 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:22:11 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:22:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:22:32 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:22:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:22:46 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:23:11 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:23:11 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:23:36 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:23:36 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:23:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:23:50 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:23:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:23:54 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:01 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:11 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:11 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:23 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:35 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:38 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:38 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:46 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:25:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:25:49 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:26:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:26:00 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  05:26:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  05:26:04 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:49:48 Now listening on: http://localhost:5023
+INFO  09:49:48 Application started. Press Ctrl+C to shut down.
+INFO  09:49:48 Hosting environment: Development
+INFO  09:49:48 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  09:51:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:16 Executed DbCommand (163ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:16 Executed DbCommand (163ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:16 Executed DbCommand (163ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:16 Executed DbCommand (163ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:25 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:25 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:26 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:26 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:51:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:51:27 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:52:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:52:01 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:52:28 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:52:28 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:52:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:52:35 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:53:36 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:53:36 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:53:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:53:50 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:54:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:54:12 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:54:20 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:54:20 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:54:48 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:54:48 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:55:07 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:55:07 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:55:33 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:55:33 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  09:55:38 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  09:55:38 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:06 Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([FName], [QuantityInStock], [UnitPrice])
+VALUES (@p0, @p1, @p2);
+SELECT [FId]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [FId] = scope_identity();
+INFO  10:22:19 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:19 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:50 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:54 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:55 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:55 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:22:55 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:23:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:23:06 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:23:17 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:23:17 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:23:31 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:23:31 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:23:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:23:43 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:23:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:23:50 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:24:07 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:24:07 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:25:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:25:49 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:33:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:33:39 Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:34:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:34:27 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:35:48 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:35:49 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:35:52 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:35:52 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:38:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:38:26 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  10:43:40 Now listening on: http://localhost:5023
+INFO  10:43:40 Application started. Press Ctrl+C to shut down.
+INFO  10:43:40 Hosting environment: Development
+INFO  10:43:40 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+ERROR 10:43:43 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Admin" for actions - FoodDeliveryWebApp.Controllers.AdminController.ViewRequestAdmin (FoodDeliveryWebApp),FoodDeliveryWebApp.Controllers.AdminController.GetDishAdmin (FoodDeliveryWebApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:44:26 Now listening on: http://localhost:5023
+INFO  10:44:26 Application started. Press Ctrl+C to shut down.
+INFO  10:44:26 Hosting environment: Development
+INFO  10:44:26 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  10:47:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:47:13 Executed DbCommand (202ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:47:59 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:47:59 Executed DbCommand (27ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:48:08 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:48:08 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:49:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:49:01 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:54:28 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:54:28 Executed DbCommand (22ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:56:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:56:34 Executed DbCommand (28ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:57:34 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:57:34 Executed DbCommand (9ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:57:38 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:57:38 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:58:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:58:04 Executed DbCommand (48ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:58:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:58:10 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:58:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:58:47 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:59:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:59:04 Executed DbCommand (8ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  10:59:16 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:59:16 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+ERROR 10:59:17 An unhandled exception has occurred while executing the request.
+FoodDeliveryWebApp.exceptions.NoId: No user with the given ID
+   at FoodDeliveryWebApp.repositories.MenuRepository.Get(Int32 key) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\repositories\MenuRepository.cs:line 39
+   at FoodDeliveryWebApp.services.AdminServices.UpdateMenu(Menu menuitem) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\services\AdminServices.cs:line 42
+   at FoodDeliveryWebApp.Controllers.AdminController.Update(Menu menu) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\Controllers\AdminController.cs:line 64
+   at lambda_method66(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:00:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:00:13 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:00:13 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:00:13 Executed DbCommand (10ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FName] = @p0, [QuantityInStock] = @p1, [UnitPrice] = @p2
+WHERE [FId] = @p3;
+SELECT @@ROWCOUNT;
+INFO  11:35:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:09 Executed DbCommand (28ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:14 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:15 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:15 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:23 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:23 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:23 Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FName] = @p0, [QuantityInStock] = @p1, [UnitPrice] = @p2
+WHERE [FId] = @p3;
+SELECT @@ROWCOUNT;
+INFO  11:35:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:35:28 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:35:28 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:36:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:36:01 Executed DbCommand (9ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:36:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:36:12 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:36:18 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:36:18 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:36:56 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:36:56 Executed DbCommand (10ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:37:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:37:13 Executed DbCommand (9ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:38:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:38:35 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:39:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:39:23 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+ERROR 11:39:23 An unhandled exception has occurred while executing the request.
+FoodDeliveryWebApp.exceptions.NoId: No user with the given ID
+   at FoodDeliveryWebApp.repositories.MenuRepository.Get(Int32 key) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\repositories\MenuRepository.cs:line 39
+   at FoodDeliveryWebApp.repositories.MenuRepository.Delete(Int32 key) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\repositories\MenuRepository.cs:line 27
+   at FoodDeliveryWebApp.services.AdminServices.DeleteMenu(Int32 menu) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\services\AdminServices.cs:line 24
+   at FoodDeliveryWebApp.Controllers.AdminController.Delete(Int32 menu) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\Controllers\AdminController.cs:line 84
+   at lambda_method84(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:40:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:40:39 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:40:45 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:40:45 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:40:47 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:40:47 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:40:47 Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Menus]
+WHERE [FId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:40:47 Success
+INFO  11:40:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:40:49 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:54:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:54:54 Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:57:20 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:57:20 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:57:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:57:43 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:58:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:58:00 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:51:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:51:27 Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:51:37 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:51:37 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:52:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:52:10 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:53:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:53:26 Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:54:05 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:54:05 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:55:05 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:55:05 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:57:41 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:57:42 Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:57:58 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:57:58 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:20:52 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:20:52 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:20:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:20:53 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:20:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:20:54 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:21:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:21:04 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:22:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:22:10 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:22:20 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:22:20 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:22:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:22:40 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:22:55 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:23:07 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:23:07 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:23:18 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:23:18 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:23:24 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:23:24 Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:23:45 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:23:45 Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:23:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:23:54 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:00 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:27 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:32 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:49 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:54 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:24:58 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:24:58 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:03 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:03 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:08 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:08 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:08 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:08 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:09 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:09 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:10 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:12 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:12 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:13 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:25:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:25:13 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:26:29 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:26:29 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:26:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:26:50 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:28:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:28:00 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:29:36 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:29:36 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:31:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:31:14 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:32:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:32:10 Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:32:48 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:32:48 Executed DbCommand (11ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  07:32:48 Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  07:32:48 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  07:32:48 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  07:32:48 Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  07:34:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:34:06 Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:35:19 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:35:19 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:35:59 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:35:59 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:36:21 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:36:21 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:57:08 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:57:08 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  07:57:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  07:57:35 Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:03:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:03:01 Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:04:41 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:04:41 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:06:22 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:06:22 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:06:26 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:06:26 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:06:45 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:06:45 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:06:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:06:50 Executed DbCommand (10ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:06:50 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:06:50 Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:06:50 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:06:50 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:06:50 Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:07:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:07:09 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:07:17 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:07:17 Executed DbCommand (12ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:07:17 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:07:17 Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:07:17 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:07:17 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:07:17 Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:11:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:11:30 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:11:30 Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  08:11:30 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:11:30 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:11:30 Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:12:33 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:12:33 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:12:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:12:39 Executed DbCommand (8ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:12:39 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:12:39 Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:12:39 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:12:39 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:12:39 Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:13:57 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:13:57 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:13:57 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:13:57 Executed DbCommand (6ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:13:57 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:13:57 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:13:57 Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:14:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:14:13 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:14:13 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:14:13 Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:14:13 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:14:13 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:14:13 Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:16:35 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:16:35 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:16:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:16:39 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:39 Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  08:16:39 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:39 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:16:39 Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:16:47 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:16:47 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:47 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:47 Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:16:47 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:47 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:16:47 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:16:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:16:55 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:19:25 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:19:25 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:25:41 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:25:41 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:25:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:25:46 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:25:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:25:53 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:25:53 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:25:53 Executed DbCommand (14ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:25:53 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:25:53 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:25:53 Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:26:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:26:00 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:00 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:00 Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:26:00 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:00 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:26:00 Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:26:37 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:26:37 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:26:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:26:43 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:43 Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  08:26:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:26:43 Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:26:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:26:46 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:46 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:46 Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:26:46 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:46 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:26:46 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:26:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:26:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:55 Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  08:26:55 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  08:26:55 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  08:26:55 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  08:29:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:29:09 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:29:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:29:30 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:30:29 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:30:29 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:30:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:30:40 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:31:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:31:00 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  08:31:05 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  08:31:05 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]

@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>Register Page</title>
+    <script>
+        const clickButton = () => {
+        const txtRole = document.getElementById('txtRole').value;
+        const txtPhone = document.getElementById('txtPhone').value;
+        const txtName = document.getElementById('txtName').value;
+        const txtPassword = document.getElementById('txtPass').value;
+        
+        if(txtRole=="Admin")
+        {fetch(`http://localhost:5023/api/User/RegisterAdmin` , {
+          method: "POST",
+          headers: { 
+            "Authorization": "Bearer " + localStorage.getItem("password"),
+            "Content-Type" : "application/json"
+           },
+          body: JSON.stringify({
+           
+                "role":txtRole,
+                "phone":txtPhone,
+                "name":txtName,
+                "aPassword":txtPassword
+          
+          }),
+        })
+          .then((res) => {res.json(); console.log(res)})
+          .then(console.log);}
+
+          else if(txtRole=="Customer")
+        {fetch(`http://localhost:5023/api/User/RegisterCustomer` , {
+          method: "POST",
+          headers: { 
+            "Authorization": "Bearer " + localStorage.getItem("password"),
+           },
+          body: JSON.stringify({
+           
+                "role":txtRole,
+                "phone":txtPhone,
+                "name":txtName,
+                "aPassword":txtPassword
+          
+          }),
+        })
+          .then((res) => res.json())
+          .then(console.log);}
+      };
+
+    </script>
 </head>
 <body>
     <div class="w-full h-screen flex flex-col ">
@@ -18,18 +64,18 @@
                 Register
             </div>
             <div class="flex flex-col justify-center items-center gap-y-4 w-[80%]">
-                <input type="text" placeholder="Enter Name" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="text" id="txtName" placeholder="Enter Name" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
                 <input type="text" placeholder="Enter Address" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" placeholder="Enter Phone" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" placeholder="Enter Confirm Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <select name="role" id="role" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
+                <input type="text" id="txtPhone" placeholder="Enter Phone" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="text" id="txtPass" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="text" id="txtCPass" placeholder="Enter Confirm Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <select name="role" id="txtRole" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
                     <option value="none" selected disabled hidden>Select an Option</option>
                     <option value="Admin">Admin</option>
                     <option value="Customer">Customer</option>
                 </select>
             </div>
-            <button class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+            <button onclick="clickButton()" class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
                 Register 
             </button>
         </div>

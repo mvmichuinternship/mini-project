@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>Login Page</title>
+
+    <script>
+        const clickButton = () => {
+        const txtUid = document.getElementById('txtUid').value *1;
+        const txtPassword = document.getElementById('txtPass').value;
+        fetch(`http://localhost:5023/api/User/Login` , {
+          method: "POST",
+          headers: { 
+            "Authorization": "Bearer " + localStorage.getItem("password"),
+            "Content-Type" : "application/json"
+           },
+          body: JSON.stringify({
+           
+                "userId":txtUid,
+                "password":txtPassword
+          
+          }),
+        })
+          .then(res => res.json()  )
+          .then(obj=>{console.log(obj); localStorage.setItem('token',obj.token)});
+      };
+
+    </script>
 </head>
 <body>
     <div class="w-full h-screen flex flex-col ">
@@ -18,15 +41,15 @@
                 Login
             </div>
             <div class="flex flex-col justify-center items-center gap-y-4 w-[80%]">
-                <input type="text" placeholder="Enter User iId" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="text" id="txtUid" placeholder="Enter User iId" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <input type="password" id="txtPass" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
                 <select name="role" id="role" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
                     <option value="none" selected disabled hidden>Select an Option</option>
                     <option value="Admin">Admin</option>
                     <option value="Customer">Customer</option>
                 </select>
             </div>
-            <button class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+            <button onclick="clickButton()" class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
                 Login 
             </button>
         </div>

@@ -1,0 +1,7 @@
+Food card:
+image
+description
+name
+key ingredients
+price
+quantity in stock/ add to cart

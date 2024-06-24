@@ -24,6 +24,12 @@ namespace FoodDeliveryWebApp.services
             var result = await _menuRepository.Delete(menu);
             return result;
         }
+        
+        public async Task<Menu> GetDish(int menu)
+        {
+            var result = await _menuRepository.Get(menu);
+            return result;
+        }
 
         public async Task<IEnumerable<Menu>> GetAllMenus()
         {

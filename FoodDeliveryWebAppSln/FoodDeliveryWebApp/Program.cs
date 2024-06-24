@@ -70,6 +70,17 @@ namespace FoodDeliveryWebApp
                 });
 
 
+            #region CORS
+            builder.Services.AddCors(opts =>
+            {
+                opts.AddPolicy("MyCors", options =>
+                {
+                    options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
+            });
+            #endregion
+
+
             builder.Services.AddDbContext<FoodAppContext>(
                options => options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"))
                );
@@ -107,6 +118,7 @@ namespace FoodDeliveryWebApp
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("MyCors");
             app.UseAuthentication();
             app.UseAuthorization();
 

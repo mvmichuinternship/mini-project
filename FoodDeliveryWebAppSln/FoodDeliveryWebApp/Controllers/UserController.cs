@@ -5,6 +5,7 @@ using FoodDeliveryWebApp.models.DTOs.loginDTOs;
 using FoodDeliveryWebApp.models.DTOs.registerDTOs;
 using FoodDeliveryWebApp.models.errorModel;
 using FoodDeliveryWebApp.services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
@@ -27,6 +28,7 @@ namespace FoodDeliveryWebApp.Controllers
         }
 
         [HttpPost("RegisterAdmin")]
+        [EnableCors]
         [ProducesResponseType(typeof(Admin), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
         [ExcludeFromCodeCoverage]
@@ -50,6 +52,7 @@ namespace FoodDeliveryWebApp.Controllers
         }
 
         [HttpPost("RegisterCustomer")]
+        [EnableCors]
         [ProducesResponseType(typeof(Customer), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
         [ExcludeFromCodeCoverage]
@@ -73,6 +76,7 @@ namespace FoodDeliveryWebApp.Controllers
         }
 
         [HttpPost("Login")]
+        [EnableCors]
         [ProducesResponseType(typeof(LoginTokenDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
         [ExcludeFromCodeCoverage]
