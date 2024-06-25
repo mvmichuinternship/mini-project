@@ -38,6 +38,18 @@ namespace FoodDeliveryWebApp.repositories
         {
             return (await _context.Menus.SingleOrDefaultAsync(u => u.FId == key)) ?? throw new NoId("No user with the given ID");
         }
+        public async Task<string> GetDishName(int key)
+        {
+            var menu = await _context.Menus.FirstOrDefaultAsync(u => u.FId == key);
+
+            if (menu == null)
+            {
+                throw new NoId($"No menu item found with ID {key}");
+            }
+
+            // Return the dish name
+            return menu.FName;
+        }
 
         public async Task<IEnumerable<Menu>> GetAll()
         {

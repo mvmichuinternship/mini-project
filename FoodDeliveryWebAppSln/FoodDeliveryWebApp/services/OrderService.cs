@@ -35,7 +35,7 @@ namespace FoodDeliveryWebApp.services
             _cartDetailsRepository = cartDetailsRepository;
             _directCdRepo = directCdRepo;
         }
-        public async Task<string> AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO)
+        public async Task<Order> AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO)
         {
             try
             {
@@ -60,7 +60,7 @@ namespace FoodDeliveryWebApp.services
                         var deletion = await _orderService.DeleteCart(order.CartId);
                     }
                 
-                return ("Successfully placed order");
+                return (order);
                
             }
             catch (Exception ex)

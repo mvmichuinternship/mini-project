@@ -33,14 +33,14 @@ namespace FoodDeliveryWebApp.Controllers
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
         [ExcludeFromCodeCoverage]
 
-        public async Task<ActionResult<string>> Register(OrderAndDetailsDTO menu)
+        public async Task<ActionResult<Order>> Register(OrderAndDetailsDTO menu)
         {
             if (ModelState.IsValid)
             {
 
             try
             {
-                string result = await _orderServices.AddOrderAndDetails(menu);
+                Order result = await _orderServices.AddOrderAndDetails(menu);
                 return Ok(result);
             }
             catch (UnableToAddException ex)

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet" />
+    <title>Place Order</title>
+    <script>
+
+const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const cid = urlParams.get('id')
+            console.log(cid)
+
+        const placeOrder=()=>{
+            const oId = document.getElementById("order-id").value;
+            const orderbtn = document.getElementById("orderbtn");
+            var orderStatus = document.getElementById("order-status");
+            fetch(`http://localhost:5023/api/Order/RegisterOrder` , {
+          method: "POST",
+          headers: { 
+            "Authorization": "Bearer " + localStorage.getItem("token"),
+            "Content-Type" : "application/json"
+           },
+          body: JSON.stringify({
+           
+                "cartId":cid,
+                "oId":oId,
+                
+          
+          }),
+        })
+          .then((res) => {res.json(); console.log(res); orderStatus.classList.remove('hidden');orderbtn.innerHTML="Proceed to payment";})
+          .then(console.log);
+        }
+
+        const getCart = () => {
+        fetch(`http://localhost:5023/api/Cart/GetTotal?id=${cid}`, {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        })
+          .then((res) => res.json())
+          .then((foods) => {
+            const foodCard = document.getElementById("cart-items");
+            const totaldiv = document.getElementById("total-price");
+            totaldiv.innerHTML= foods.total
+            const cardsHTML = foods.cartItems.map(
+              (food) => `
+              <div class="flex justify-between items-center w-full" >
+                <span class="self-center">${food.fName}</span>
+                <span class="self-center">${food.quantity}</span>
+                <span class="self-center">${food.total}</span>
+            </div>
+      `
+            );
+
+            foodCard.innerHTML = cardsHTML.join("");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      };
+    </script>
+</head>
+<body onload="getCart()">
+    <div class="flex justify-center items-center h-screen w-full">
+        <div class="flex flex-col sm:w-[40%] w-[80%] h-[70%] justify-center  border-2 border-pink-500 rounded-md shadow-xl p-10">
+            <div class="flex justify-between items-center">
+                <span>Item Name</span>
+                <span>Quantity</span>
+                <span>Price</span>
+            </div>
+            <div class="flex flex-col justify-center items-center" id="cart-items">
+
+            </div>
+            <div class="flex justify-between items-center" >
+                <span>Total Price</span> <span id="total-price"></span>
+            </div>
+            <div>
+                <input
+            type="text"
+            id="order-id"
+            placeholder="Enter order id"
+            class=" w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 my-10 border border-pink-500 focus:outline-pink-600 shadow-md"
+          />
+            </div>
+            <div class="flex justify-center items-center hidden" id="order-status">
+                Your payment is pending!
+            </div>
+            <div>
+                <button onclick="placeOrder()" id="orderbtn" class="self-center w-[48%] py-1 px-2 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+                    Update 
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

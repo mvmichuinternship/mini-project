@@ -6,67 +6,8 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Admin Dashboard</title>
     <!-- <script>
-      const addorUpdateCart = (fId, qty) => {
-        const cartId = document.getElementById('cart-id').value;
 
-        fetch("http://localhost:5023/api/Cart/RegisterCart", {
-          method: "POST",
-          headers: {
-            "Authorization": "Bearer " + localStorage.getItem("token"),
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            "cartId": cartId,
-            "customerId": 1, //localStorage.getItem("customer ID")
-            "fId": fId,
-            "quantity": qty === "add" ? 1  : 0,
-          }),
-        })
-          .then(async(res) => {
-            var foods = await res.json();
-          })
-          .then(console.log);
-      };
 
-      var getFood = () => {
-        count = 0;
-        fetch("http://localhost:5023/api/Admin", {
-          method: "GET",
-          headers: {
-            Authorization: "Bearer " + localStorage.getItem("token"),
-          },
-        })
-          .then(async (res) => {
-            var foodCard = document.getElementById("food-card");
-            var foods = await res.json();
-            var cardsHTML = foods.map((food) => {
-              return `
-        <div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-[80]">
-                <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-                <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-                    <div>${food.fName}</div>
-                    <div>${food.unitPrice}</div>
-                    <div>${food.quantityInStock}</div>
-                </div>
-                <div class="flex justify-center p-2 gap-x-1">
-                    <div class="hidden" id="btn-cart">
-                    <button class="bg-pink-500 rounded-md px-5  text-white " id="add-to-cart" onclick="addorUpdateCart(${food.fId},'remove')">-</button>
-                    <div>${count}</div>
-                    <button class="bg-pink-500 rounded-md px-5  text-white " id="add-to-cart" onclick="addorUpdateCart(${food.fId},'add')">+</button>
-                        </div>
-                    <button class="bg-pink-500 rounded-md px-5  text-white " id="add-to-cart" onclick="addorUpdateCart(${food.fId},'add')">Add to cart</button>
-                </div>
-            </div>
-        `;
-            });
-
-            foodCard.innerHTML = cardsHTML.join("");
-          })
-          .then(console.log);
-      };
-    </script> -->
-
-    <script>
         const addorUpdateCart = (fId, action) => {
           const cartId = document.getElementById('cart-id').value;
     
@@ -142,7 +83,151 @@
               console.error('Error:', error);
             });
         };
-      </script>
+      </script> -->
+
+    <script>
+      let cartItems = [];
+      var count=0
+      var id;
+      const toggleButtons = (foodId) => {
+        const addBtn = document.getElementById(`add-btn-${foodId}`);
+        const plusBtn = document.getElementById(`plus-btn-${foodId}`);
+        const minusBtn = document.getElementById(`minus-btn-${foodId}`);
+        const qtyBtn = document.getElementById(`quantity-${foodId}`);
+
+        if (addBtn) {
+          addBtn.classList.add("hidden");
+          count++
+        }
+
+        if (plusBtn ) {
+          count++
+          plusBtn.classList.remove("hidden");
+          minusBtn.classList.remove("hidden");
+          qtyBtn.classList.remove("hidden");
+          addBtn.classList.add("hidden");
+        }
+        if (minusBtn) {
+          count--
+          plusBtn.classList.remove("hidden");
+          minusBtn.classList.remove("hidden");
+          qtyBtn.classList.remove("hidden");
+          addBtn.classList.add("hidden");
+        }
+      };
+
+      const addorUpdateCart = (fId, action) => {
+        let existingItem = cartItems.find((item) => item.fId === fId);
+
+        if (action === "add") {
+          if (existingItem) {
+            existingItem.quantity++;
+          } else {
+            cartItems.push({ fId: fId, quantity: 1 });
+          }
+        } else if (action === "remove") {
+          if (existingItem && existingItem.quantity > 0) {
+            existingItem.quantity--;
+            if (existingItem.quantity === 0) {
+              cartItems = cartItems.filter((item) => item.fId !== fId);
+            }
+          }
+        }
+        updateUI(fId);
+
+        console.log(cartItems);
+      };
+
+      const updateUI = (fId) => {
+        const quantityElement = document.getElementById(`quantity-${fId}`);
+        const item = cartItems.find((item) => item.fId === fId);
+
+        if (item) {
+          quantityElement.textContent = item.quantity;
+        } else {
+          quantityElement.textContent = "0";
+        }
+
+        // getFood()
+      };
+      function setCartId(){
+
+        var cartId = document.getElementById("cart-id").value;
+        localStorage.setItem('cartId',cartId)
+        const orderBtn = document.getElementById("place-order");
+            const linkorder= `<a class="bg-pink-500 rounded-md px-5 py-1 text-white"  href="http://localhost:5500/confirmOrder.html?id=${localStorage.getItem("cartId")}">Confirm Order</a>`
+            orderBtn.innerHTML+=linkorder
+      }
+      const sendCartToBackend = (fId, qty) => {
+        
+
+        fetch("http://localhost:5023/api/Cart/RegisterCart", {
+          method: "POST",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+          cartId: localStorage.getItem('cartId'),
+          customerId: 1,
+          fId: fId,
+          quantity: qty,
+          }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            cartItems = [];
+            
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+
+      };
+
+      const getFood = () => {
+        // localStorage.setItem('cartId',cartId);
+        fetch("http://localhost:5023/api/Admin", {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        })
+          .then((res) => res.json())
+          .then((foods) => {
+            const foodCard = document.getElementById("food-card");
+            
+            const cardsHTML = foods.map(
+              (food) => `
+        <div class="flex flex-col border-pink-500 border shadow-xl rounded-md w-[175px]">
+          <div class="flex w-full justify-center items-center h-full">
+            <img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md">
+          </div>
+          <div class="flex flex-col w-full border-t-2 border-pink-500 p-4">
+            <div> ${food.fName}</div>
+            <div>Rs. ${food.unitPrice}</div>
+            <div>In Stock ${food.quantityInStock}</div>
+          </div>
+          <div class="flex justify-center p-2 gap-x-1">
+            <button id="add-btn-${food.fId}" class="bg-pink-500 rounded-md px-5 text-white" onclick="toggleButtons(${food.fId});addorUpdateCart(${food.fId}, 'add');">Add to cart</button>
+            <button id="minus-btn-${food.fId}" class="bg-pink-500 rounded-md px-5 text-white hidden" onclick="addorUpdateCart(${food.fId}, 'remove');">-</button>
+            <div id="quantity-${food.fId}" class="hidden">${count}</div>
+            <button id="plus-btn-${food.fId}" class="bg-pink-500 rounded-md px-5 text-white hidden" onclick="addorUpdateCart(${food.fId}, 'add');">+</button>
+          </div>
+          <div class="flex justify-center p-2">
+          <button class="bg-pink-500 rounded-md px-5 text-white" onclick="sendCartToBackend(${food.fId}, parseInt(document.getElementById('quantity-${food.fId}').textContent))">Confirm dish</button>
+        </div>
+        </div>
+      `
+            );
+            foodCard.innerHTML = cardsHTML.join("");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      };
+    </script>
   </head>
   <body onload="getFood()">
     <div class="flex h-screen w-full justify-around items-center">
@@ -150,18 +235,29 @@
         class="flex flex-col fixed top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
       ></div>
       <div class="flex flex-col mx-20 justify-around items-center">
-        <input
-          type="text"
-          id="cart-id"
-          placeholder="Enter cart id"
-          class="w-[20%] text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 my-10 border border-pink-500 focus:outline-pink-600 shadow-md"
-        />
-        <div class="grid grid-cols-5 w-full gap-x-8 gap-y-8 self-center justify-items-center "id="food-card">
+        <div class="sm:flex sm:justify-around w-full sm:items-center xs:flex xs:flex-col xs:justify-center xs:items-center my-4">
+
+          <input
+            type="text"
+            id="cart-id"
+            placeholder="Enter cart id"
+            onblur="setCartId()"
+            class="sm:w-[20%] w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 my-10 border border-pink-500 focus:outline-pink-600 shadow-md"
+          />
+          <button id="place-order" >
+          </button>
+        </div>
+        <div
+          class="grid grid-cols-1 text-xs w-full gap-x-8 gap-y-8 self-center justify-items-center sm:grid sm:grid-cols-4 sm:text-base"
+          id="food-card"
+        >
           <!-- <div
             class="flex  h-full justify-center items-center py-10"
             
           ></div> -->
         </div>
+
+        
       </div>
     </div>
   </body>

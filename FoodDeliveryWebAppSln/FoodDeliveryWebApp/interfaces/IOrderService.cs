@@ -7,7 +7,7 @@ namespace FoodDeliveryWebApp.interfaces
 {
     public interface IOrderService
     {
-        public Task<string> AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO);
+        public Task<Order> AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO);
         public Task<Order> GetOrder(int id);
         public Task<OrderTotalResult> GetTotal(int id);
     }

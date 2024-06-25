@@ -99,6 +99,7 @@ namespace FoodDeliveryWebApp
             builder.Services.AddScoped<CartDetailsRepository>();
             builder.Services.AddScoped<OrderDetailsRepository>();
             builder.Services.AddScoped<FeedbackCommentRepository>();
+            builder.Services.AddScoped<MenuRepository>();
 
 
             builder.Services.AddScoped<IRegisterLoginService,RegisterLoginService>();

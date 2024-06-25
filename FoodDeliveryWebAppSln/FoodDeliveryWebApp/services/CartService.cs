@@ -13,13 +13,15 @@ namespace FoodDeliveryWebApp.services
         private readonly IRepository<int, Menu> _menuRepository;
         private readonly IRepository<int, CartDetails> _cartDetailsRepository;
         private readonly CartDetailsRepository _directCdRepo;
+        private readonly MenuRepository _directMenuRepo;
 
-        public CartService( IRepository<int, Cart> cartRepository, IRepository<int,CartDetails> cartDetailsRepository, IRepository<int, Menu> _menu, CartDetailsRepository directCdRepo)
+        public CartService( IRepository<int, Cart> cartRepository, IRepository<int,CartDetails> cartDetailsRepository,MenuRepository directMenuRepo, IRepository<int, Menu> _menu, CartDetailsRepository directCdRepo)
         {
             _cartRepository = cartRepository;
             _cartDetailsRepository = cartDetailsRepository;
             _menuRepository = _menu;
             _directCdRepo = directCdRepo;
+            _directMenuRepo=directMenuRepo;
         }
 
         //public async Task<CartDetails> AddCartAndDetails(CartAndDetailsDTO cartAndDetailsDTO)
@@ -161,7 +163,7 @@ namespace FoodDeliveryWebApp.services
             cd.CartId = cartAndDetailsDTO.CartId;
             cd.FId = cartAndDetailsDTO.FId;
             cd.Qty_ordered = cartAndDetailsDTO.Quantity;
-            cd.Total = total + (cartAndDetailsDTO.Quantity * price);
+            cd.Total = (cartAndDetailsDTO.Quantity * price);
             return cd;
         }
 
@@ -174,13 +176,15 @@ namespace FoodDeliveryWebApp.services
         public async Task<CartTotalResult> GetTotal(int id)
         {
             var cd = await _directCdRepo.GetTotalForCart(id);
+            
             int cid = cd[0].CartId;
             int sumtotal = 0;
             List<CartItem> list = new List<CartItem>();
             CartItem ci;
             foreach (var item in cd)
             {
-                ci = new CartItem() {Fid= item.FId,Quantity= item.Qty_ordered,Total= item.Total };
+                var dish = await _directMenuRepo.GetDishName(item.FId);
+                ci = new CartItem() {Fid= item.FId,Quantity= item.Qty_ordered,Total= item.Total, FName=dish };
                 list.Add(ci);
                 sumtotal += item.Total;
             }
