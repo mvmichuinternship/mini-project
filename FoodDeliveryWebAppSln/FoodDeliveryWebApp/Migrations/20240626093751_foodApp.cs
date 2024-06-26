@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FoodDeliveryWebApp.Migrations
 {
-    public partial class foodapp : Migration
+    public partial class foodApp : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -61,6 +61,8 @@ namespace FoodDeliveryWebApp.Migrations
                     FId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UnitPrice = table.Column<int>(type: "int", nullable: false),
                     QuantityInStock = table.Column<int>(type: "int", nullable: false)
                 },
@@ -160,8 +162,8 @@ namespace FoodDeliveryWebApp.Migrations
                     table.ForeignKey(
                         name: "FK_Feedbacks_Menus_CommentId",
                         column: x => x.CommentId,
-                        principalTable: "Menus",
-                        principalColumn: "FId");
+                        principalTable: "FbComments",
+                        principalColumn: "CommentId");
                 });
 
             migrationBuilder.CreateTable(
@@ -237,7 +239,7 @@ namespace FoodDeliveryWebApp.Migrations
                     table.PrimaryKey("PK_Payments", x => x.PayId);
                     table.ForeignKey(
                         name: "FK_Payments_Orders_CustomerId",
-                        column: x => x.CustomerId,
+                        column: x => x.OId,
                         principalTable: "Orders",
                         principalColumn: "OId",
                         onDelete: ReferentialAction.Cascade);

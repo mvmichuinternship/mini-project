@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet" />
+    <script src="loggedIn.js"></script>
+    <title>Cancel Payment</title>
+    <script>
+
+    const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const oId = urlParams.get("oid");
+      console.log(oId);
+      const pId = urlParams.get("pid");
+      console.log(pId);
+
+        const getOrderDetails = () => {
+        fetch(`http://localhost:5023/api/Order/GetTotal?id=${oId}`, {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        })
+          .then((res) => res.json())
+          .then((foods) => {
+            const foodCard = document.getElementById("cart-items");
+            const totaldiv = document.getElementById("total-price");
+            totaldiv.innerHTML = foods.total;
+            const cardsHTML = foods.orderItems.map(
+              (food) => `
+              <div class="flex justify-between items-center w-full" >
+                <span class="self-center">${food.fName}</span>
+                <span class="self-center">${food.quantity}</span>
+                <span class="self-center">${food.total}</span>
+            </div>
+      `
+            );
+
+            foodCard.innerHTML = cardsHTML.join("");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      };
+        const getPaymentDetails = () => {
+        fetch(`http://localhost:5023/api/Payment/ViewPaymentStatus?id=${pId}`, {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        })
+          .then((res) => res.json())
+          .then((pay) => {
+            const paymentStatus = document.getElementById("payment-status");
+            paymentStatus.innerHTML = `<span >Status :<span class="text-sm text-green-500"> ${pay.status}</span></span><span >Mode of Payment :<span class="text-sm text-blue-500"> ${pay.paymentMethod}</span></span>`
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      };
+
+      const cancelPayment=()=>{
+        fetch(`http://localhost:5023/api/Payment/CancelPayment?id=${pId}`,{
+            method:"GET",
+            headers:{
+                Authorization: "Bearer "+ localStorage.getItem("token"),
+            },
+        })
+        .then((res)=>{res.json();window.location.href =`http://127.0.0.1:5500/makePayment.html?id=${oId}`})
+        .then(console.log)
+      }
+
+    </script>
+</head>
+<body onload="tokenValidation();getOrderDetails();getPaymentDetails()">
+    <div class="flex justify-center items-center h-screen w-full">
+      <div
+        class="flex flex-col sm:w-[40%] w-[80%] h-[70%] justify-center border-2 border-pink-500 rounded-md shadow-xl p-10"
+      >
+        <div class="flex justify-between items-center">
+          <span>Item Name</span>
+          <span>Quantity</span>
+          <span>Price</span>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center"
+          id="cart-items"
+        ></div>
+        <div class="w-full border border-dashed border-pink-500 h-0 my-4"></div>
+        <div class="flex justify-between items-center">
+          <span>Total Price</span> <span id="total-price"></span>
+        </div>
+        <div id="payment-status" class="flex flex-col py-4 ">
+          
+        </div>
+        
+        <div class="flex justify-center items-center " id="order-status">
+          <button
+            onclick="cancelPayment()"
+            id="orderbtn"
+            class=" w-[48%] py-1 px-2 mt-4 bg-pink-500 rounded-md hover:bg-pink-600 text-white"
+          >
+            Cancel Payment
+          </button>
+          <div id="paymentbtn"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

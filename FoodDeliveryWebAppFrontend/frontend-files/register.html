@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script src="loggedIn.js"></script>
     <title>Register Page</title>
     <script>
         const clickButton = () => {
@@ -16,7 +17,7 @@
         {fetch(`http://localhost:5023/api/User/RegisterAdmin` , {
           method: "POST",
           headers: { 
-            "Authorization": "Bearer " + localStorage.getItem("password"),
+            "Authorization": "Bearer " + localStorage.getItem("token"),
             "Content-Type" : "application/json"
            },
           body: JSON.stringify({
@@ -35,25 +36,26 @@
         {fetch(`http://localhost:5023/api/User/RegisterCustomer` , {
           method: "POST",
           headers: { 
-            "Authorization": "Bearer " + localStorage.getItem("password"),
+            "Authorization": "Bearer " + localStorage.getItem("token"),
+            "Content-Type" : "application/json"
            },
           body: JSON.stringify({
            
                 "role":txtRole,
                 "phone":txtPhone,
                 "name":txtName,
-                "aPassword":txtPassword
+                "cPassword":txtPassword
           
           }),
         })
-          .then((res) => res.json())
+          .then((res) => {res.json(); window.location.href="./login.html"})
           .then(console.log);}
       };
 
     </script>
 </head>
-<body>
-    <div class="w-full h-screen flex flex-col ">
+<body onload="checkLoggedIn()">
+    <div class="w-full h-screen flex flex-col " id="main-div">
         <div class="flex justify-between items-center h-[11%] border-b-4 border-pink-500">
             <div class="px-4 text-pink-500 text-4xl">
                 ELFY'S CAFETERIA

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script src="loggedIn.js"></script>
     <title>Login Page</title>
 
     <script>
@@ -13,7 +14,7 @@
         fetch(`http://localhost:5023/api/User/Login` , {
           method: "POST",
           headers: { 
-            "Authorization": "Bearer " + localStorage.getItem("password"),
+            "Authorization": "Bearer " + localStorage.getItem("token"),
             "Content-Type" : "application/json"
            },
           body: JSON.stringify({
@@ -24,13 +25,20 @@
           }),
         })
           .then(res => res.json()  )
-          .then(obj=>{console.log(obj); localStorage.setItem('token',obj.token)});
+          .then(obj=>{console.log(obj); localStorage.setItem('token',obj.token); localStorage.setItem('role',obj.role), localStorage.setItem('cid',obj.userID-1);
+          if(obj.role=="Admin") 
+          window.location.href="./adminDashboard.html"
+        else
+        window.location.href="./viewMenu.html"
+        });
       };
+
+     
 
     </script>
 </head>
-<body>
-    <div class="w-full h-screen flex flex-col ">
+<body onload="checkLoggedIn()">
+    <div class="w-full h-screen flex flex-col " id="main-div">
         <div class="flex justify-between items-center h-[11%] border-b-4 border-pink-500">
             <div class="px-4 text-pink-500 text-4xl">
                 ELFY'S CAFETERIA

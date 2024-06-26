@@ -38,6 +38,7 @@ namespace FoodDeliveryAppTests.servicetests
         CartDetailsRepository cartDetailsRepository;
         OrderDetailsRepository orderDetailsRepository;
         FeedbackCommentRepository feedbackCommentRepository;
+        MenuRepository menuRepository;
 
         IRegisterLoginService registerService;
         ICartService cartService;
@@ -68,13 +69,14 @@ namespace FoodDeliveryAppTests.servicetests
             orderRepo = new OrderRepository(context1);
             orderDetailsRepo = new OrderDetailsRepository(context1);
             orderDetailsRepository = new OrderDetailsRepository(context1);
+            menuRepository = new MenuRepository(context1);
 
 
             registerService = new RegisterLoginService(userRepo, adminRepo, customerRepo, tokenService);
-            cartService = new CartService(cartRepo, cartDetailsRepo, menuRepo, cartDetailsRepository);
+            cartService = new CartService(cartRepo, cartDetailsRepo,menuRepository, menuRepo, cartDetailsRepository);
             adminService = new AdminServices(menuRepo);
             feedbackService = new FeedbackService(feedbackRepo, fbCommentRepo, feedbackCommentRepository);
-            orderService = new OrderService(orderRepo, orderDetailsRepo,menuRepo, orderDetailsRepository,cartDetailsRepository,cartService,adminService,cartRepo,cartDetailsRepo);
+            orderService = new OrderService(orderRepo,menuRepository, orderDetailsRepo,menuRepo, orderDetailsRepository,cartDetailsRepository,cartService,adminService,cartRepo,cartDetailsRepo);
             paymentService = new PaymentService(paymentRepo, orderRepo, orderDetailsRepo, orderDetailsRepository);
 
 

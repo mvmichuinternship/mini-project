@@ -5,3 +5,10 @@ name
 key ingredients
 price
 quantity in stock/ add to cart
+
+Homepage: images
+register: redirect to login page 
+login: if role=admin redirect to admin dashboard; else redirect to view menu -- done
+admindashboard: add button top left or rightcorner, change layout
+
+navigation buttons

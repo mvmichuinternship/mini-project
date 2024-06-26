@@ -18,12 +18,14 @@ namespace FoodDeliveryWebApp.services
         private readonly CartDetailsRepository _directCdRepo;
         private readonly IRepository<int, Cart> _cartRepository;
         private readonly IRepository<int, CartDetails> _cartDetailsRepository;
+        private readonly MenuRepository _directMenuRepo;
+
 
 
         private readonly ICartService _orderService;
         private readonly IAdminServices _adminService;
 
-        public OrderService(IRepository<int, Order> orderRepository, IRepository<int, OrderDetails> orderDetailsRepository, IRepository<int, Menu> _menu, OrderDetailsRepository directOdRepo, CartDetailsRepository directCdRepo, ICartService orderService, IAdminServices adminService, IRepository<int,Cart> cartRepository, IRepository<int, CartDetails> cartDetailsRepository )
+        public OrderService(IRepository<int, Order> orderRepository, MenuRepository directMenuRepo, IRepository<int, OrderDetails> orderDetailsRepository, IRepository<int, Menu> _menu, OrderDetailsRepository directOdRepo, CartDetailsRepository directCdRepo, ICartService orderService, IAdminServices adminService, IRepository<int,Cart> cartRepository, IRepository<int, CartDetails> cartDetailsRepository )
         {
             _orderRepository = orderRepository;
             _orderDetailsRepository = orderDetailsRepository;
@@ -34,6 +36,8 @@ namespace FoodDeliveryWebApp.services
             _cartRepository = cartRepository;
             _cartDetailsRepository = cartDetailsRepository;
             _directCdRepo = directCdRepo;
+            _directMenuRepo = directMenuRepo;
+
         }
         public async Task<Order> AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO)
         {
@@ -95,7 +99,8 @@ namespace FoodDeliveryWebApp.services
             OrderItem ci;
             foreach (var item in cd)
             {
-                ci = new OrderItem() { Fid = item.FId, Quantity = item.Qty_ordered, Total = item.Total };
+                var dish = await _directMenuRepo.GetDishName(item.FId);
+                ci = new OrderItem() { Fid = item.FId, Quantity = item.Qty_ordered, Total = item.Total, FName = dish };
                 list.Add(ci);
                 sumtotal += item.Total;
             }

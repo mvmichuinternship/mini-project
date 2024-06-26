@@ -3,6 +3,62 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\migrations\\20240626093751_foodapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\migrations\\20240626093751_foodapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliveryapptests\\servicetests\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F64D42C7-A602-4730-AFB7-E226093D0A63}|FoodDeliveryAppTests\\FoodDeliveryAppTests.csproj|solutionrelative:fooddeliveryapptests\\servicetests\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\models\\fbcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\models\\fbcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\dummymodel\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\dummymodel\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,28 +67,12 @@
       "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\dummymodel\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\dummymodel\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|solutionrelative:fooddeliverywebapp\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE23E398-B3F9-4FF2-A759-165F0F76B224}|FoodDeliveryWebApp\\FoodDeliveryWebApp.csproj|c:\\users\\vc\\desktop\\mini-project\\fooddeliverywebappsln\\fooddeliverywebapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +102,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\UserController.cs",
@@ -76,19 +116,142 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAD4vyUAAAAjAAAA",
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\PaymentService.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\services\\PaymentService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAADwvxgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T15:34:51.775Z",
+              "WhenOpened": "2024-06-26T19:10:48.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20240626093751_foodApp.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Migrations\\20240626093751_foodApp.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Migrations\\20240626093751_foodApp.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Migrations\\20240626093751_foodApp.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\Migrations\\20240626093751_foodApp.cs",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAYwPEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T09:38:46.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "RelativeToolTip": "FoodDeliveryAppTests\\servicetests\\CartServiceTest.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAAE4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T09:33:51.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Menu.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\Menu.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Menu.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\models\\Menu.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T09:27:22.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Feedback.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\Feedback.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\models\\Feedback.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T08:46:58.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\FeedbackRepository.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\FeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\FeedbackRepository.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\FeedbackRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAuwDQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T07:25:59.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FbComment.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\FbComment.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\models\\FbComment.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\models\\FbComment.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\models\\FbComment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T07:16:24.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\dummymodel\\OrderItem.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\dummymodel\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\dummymodel\\OrderItem.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\dummymodel\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T05:22:08.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\FeedbackController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwEQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T04:10:42.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FeedbackService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\FeedbackService.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\FeedbackService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\FeedbackService.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\services\\FeedbackService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T04:10:42.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "FoodDeliveryWebApp\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAIAwwCUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T15:34:51.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\interfaces\\IOrderService.cs",
@@ -96,25 +259,23 @@
               "RelativeToolTip": "FoodDeliveryWebApp\\interfaces\\IOrderService.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAIwAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T15:32:04.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T15:32:04.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "MenuRepository.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
               "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\MenuRepository.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAwCgAAAAtAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwCgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:46:04.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T13:46:04.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "CartRepository.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\CartRepository.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\CartRepository.cs",
@@ -122,12 +283,11 @@
               "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\CartRepository.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwCQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:45:03.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T13:45:03.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\repositories\\dummymodel\\CartItem.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\repositories\\dummymodel\\CartItem.cs",
@@ -135,8 +295,7 @@
               "RelativeToolTip": "FoodDeliveryWebApp\\repositories\\dummymodel\\CartItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:41:38.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T13:41:38.599Z"
             },
             {
               "$type": "Document",
@@ -146,14 +305,14 @@
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\OrderService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\OrderService.cs",
               "RelativeToolTip": "FoodDeliveryWebApp\\services\\OrderService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwDwAAAAVAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAkwEcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T04:07:58.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "AdminServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\AdminServices.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\AdminServices.cs",
@@ -165,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "IAdminServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\interfaces\\IAdminServices.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\interfaces\\IAdminServices.cs",
@@ -177,20 +336,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\CartService.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\services\\CartService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\services\\CartService.cs",
               "RelativeToolTip": "FoodDeliveryWebApp\\services\\CartService.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAqwMUAAAAhAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T04:19:35.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Controllers\\AdminController.cs",
@@ -203,16 +362,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Program.cs",
               "RelativeDocumentMoniker": "FoodDeliveryWebApp\\Program.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\mini-project\\FoodDeliveryWebAppSln\\FoodDeliveryWebApp\\Program.cs",
               "RelativeToolTip": "FoodDeliveryWebApp\\Program.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAgwGUAAAA1AAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAwFQAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T14:31:59.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T14:31:59.556Z"
             }
           ]
         }

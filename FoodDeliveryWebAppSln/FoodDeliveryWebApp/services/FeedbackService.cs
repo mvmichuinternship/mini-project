@@ -25,7 +25,7 @@ namespace FoodDeliveryWebApp.services
 
             FbComment fbComment = await _fbCommentRepository.Add(comment);
                 Feedback fb = await _feedbackRepository.Get(comment.FbId);
-                fb.CommentId= comment.CommentId;
+                fb.CommentId= fbComment.CommentId;
                 var res = await _feedbackRepository.Update(fb);
             
                 return fbComment;
@@ -42,11 +42,14 @@ namespace FoodDeliveryWebApp.services
             try
             {
 
-            FbComment fbCommentid = await _feedbackCommentRepository.GetByFbId(id);
+                FbComment fbCommentid = await _feedbackCommentRepository.GetByFbId(id);
 
-            //if (fbCommentid == null)
-            //{
-                FbComment fbc = await _fbCommentRepository.Delete(fbCommentid.FbId);
+                //if (fbCommentid == null)
+                //{
+                Feedback feedbackCommentUpdate = await _feedbackRepository.Get(id);
+                feedbackCommentUpdate.CommentId = null;
+                Feedback fb = await _feedbackRepository.Update(feedbackCommentUpdate);
+                FbComment fbc = await _fbCommentRepository.Delete(fbCommentid.CommentId);
                 return fbc;
             //}
             }
