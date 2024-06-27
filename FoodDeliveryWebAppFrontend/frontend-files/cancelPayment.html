@@ -53,6 +53,10 @@
           .then((res) => res.json())
           .then((pay) => {
             const paymentStatus = document.getElementById("payment-status");
+            if(pay.paymentMethod =='cod'){
+              paymentStatus.innerHTML = `<span >Status :<span class="text-sm text-green-500"> Yet to pay </span></span><span >Mode of Payment :<span class="text-sm text-blue-500"> ${pay.paymentMethod}</span></span>`
+            }
+            else
             paymentStatus.innerHTML = `<span >Status :<span class="text-sm text-green-500"> ${pay.status}</span></span><span >Mode of Payment :<span class="text-sm text-blue-500"> ${pay.paymentMethod}</span></span>`
           })
           .catch((error) => {
@@ -75,6 +79,24 @@
 </head>
 <body onload="tokenValidation();getOrderDetails();getPaymentDetails()">
     <div class="flex justify-center items-center h-screen w-full">
+      <div
+        class="flex flex-col justify-start py-20 gap-y-5 items-center fixed z-5 top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
+        >
+        <!-- <div class=""> -->
+    
+          <a href="./home.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-house hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg></a>
+          <a href="./viewMenu.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-cart hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg></a>
+          <button onclick="logout()" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-box-arrow-right hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>          
+          </svg></button>
+
+        <!-- </div> -->
+    </div>
       <div
         class="flex flex-col sm:w-[40%] w-[80%] h-[70%] justify-center border-2 border-pink-500 rounded-md shadow-xl p-10"
       >

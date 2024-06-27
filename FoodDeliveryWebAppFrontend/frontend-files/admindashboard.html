@@ -18,8 +18,6 @@
         .then(console.log)
         }
         var getFood = () => {
-        // const txtUid = document.getElementById("txtUid").value * 1;
-        // const txtPass = document.getElementById("txtPass").value;
         fetch("http://localhost:5023/api/Admin", {
           method: "GET",
           headers: {
@@ -32,16 +30,17 @@
     var cardsHTML = foods.map(food => {
         let newImg = food.fImage.split('C:\\fakepath\\').join('');
         return `
-        <div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-[50]">
+        <div class="flex flex-col border-pink-500 border shadow-xl  rounded-md sm:w-[250px] w-[200px]">
                 <div class="flex w-full justify-center items-center h-full"><img src="./images/${newImg}" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
                 <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-                    <div>${food.fName}</div>
-                    <div>${food.unitPrice}</div>
-                    <div>${food.quantityInStock}</div>
+                    <div class="font-bold">${food.fName}</div>
+                    <div class="text-wrap">${food.fDescription}</div>
+                    <div class="text-green-500">Rs. ${food.unitPrice}</div>
+                    <div class="text-red-500">In Stock ${food.quantityInStock}</div>
                 </div>
-                <div class="flex justify-center p-2 gap-x-1">
-                    <a class="bg-pink-500 rounded-md px-5  text-white decoration-none" href="http://127.0.0.1:5500/editFood.html?id=${food.fId}">Edit</a>
-                    <button class="bg-pink-500 rounded-md px-5  text-white " onclick="deleteDish(${food.fId})">Delete</button>
+                <div class="sm:flex sm:flex-row flex flex-col gap-y-1 justify-center p-2 gap-x-1">
+                    <a class="bg-pink-500 rounded-md px-5 text-center  text-white decoration-none" href="http://127.0.0.1:5500/editFood.html?id=${food.fId}">Edit</a>
+                    <button class="bg-pink-500 rounded-md px-5 text-center text-white " onclick="deleteDish(${food.fId})">Delete</button>
                 </div>
             </div>
         `;
@@ -51,91 +50,80 @@
         })
           .then(console.log);
       };
+
+    //   function Search() {
+    //     var searchText = document
+    //       .getElementById("searchtxt")
+    //       .value.toLowerCase();
+    //     var filteredQuotes = filter((quote) => {
+    //       return (
+    //         food.name.toLowerCase().includes(searchText) ||
+    //         food.price.toLowerCase().includes(searchText)
+    //       );
+    //     });
+    // }
     </script>
 </head>
 <body onload="tokenValidation();getFood()">
     <div class="flex flex-col h-screen w-full justify-between items-center">
-        <div class="flex flex-col fixed top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200">
-            
-        </div>
-        <!-- <div class="flex h-full justify-between items-center py-10"> -->
-          <!-- -->
+        <div
+        class="flex flex-col justify-start py-20 gap-y-5 items-center fixed z-5 top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
+        >
+    
+          <a href="./home.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-house hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg></a>
+          <a href="./admindashboard.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-bank2 hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916zM12.375 6v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2M.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1z"/>
+        </svg></a>
+          <a href="./addFood.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-plus-square hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg></a>
+          <button onclick="logout()" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-box-arrow-right hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>          
+          </svg></button>
+
+    </div>
+    
             <div class=" flex justify-start items-start w-full h-full mt-10 mb-10">
 
                 <a href="addFood.html" class=" flex flex-col border-pink-500 border shadow-xl mx-20 rounded-md px-10  py-1 self-center justify-center items-center">
                   <svg fill="#ec4899" class="p-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.402 45.402" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141 c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27 c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435 c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"></path> </g> </g></svg>
                 </a>
             </div>
-            <!-- <div class="grid grid-cols-3 w-[95%] self-center justify-items-center"> -->
-                  <!-- -->
-              <div class=" col-span-2 flex flex-wrap gap-x-8 gap-y-8  w-[80%] h-full justify-start items-center pb-10" id="food-card">
+            <div style="display: flex; justify-content: center; align-items: center">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  id="searchtxt"
+                  style="
+                    border: 1px solid #402e7a;
+                    border-radius: 5px 0 0 5px;
+                    outline: none;
+                  "
+                />
+                <button
+                  onclick="Search()"
+                  style="
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    padding: 2px 12px;
+                    color: white;
+                    background-color: #402e7a;
+                  "
+                >
+                  Search
+                </button>
+              </div>
+              <div class="flex flex-wrap gap-x-8 gap-y-8  w-[80%] h-full justify-center items-center " id="food-card">
       
                   
-                  <!-- -->
+              
               </div>
-            <!-- </div> -->
-        <!-- </div> -->
+
+           
     </div>
 </body>
 </html>
-<!-- 
-<div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-full">
-    <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-    <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-        <div>Food Name</div>
-        <div>Price</div>
-        <div>Quantity in stock</div>
-    </div>
-    <div class="flex justify-center p-2 gap-x-1">
-        <button class="bg-pink-500 rounded-md px-5  text-white">Edit</button>
-        <button class="bg-pink-500 rounded-md px-5  text-white">Delete</button>
-    </div>
-</div>
-<div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-full">
-    <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-    <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-        <div>Food Name</div>
-        <div>Price</div>
-        <div>Quantity in stock</div>
-    </div>
-    <div class="flex justify-center p-2 gap-x-1">
-        <button class="bg-pink-500 rounded-md px-5  text-white">Edit</button>
-        <button class="bg-pink-500 rounded-md px-5  text-white">Delete</button>
-    </div>
-</div>
-<div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-full">
-    <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-    <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-        <div>Food Name</div>
-        <div>Price</div>
-        <div>Quantity in stock</div>
-    </div>
-    <div class="flex justify-center p-2 gap-x-1">
-        <button class="bg-pink-500 rounded-md px-5  text-white">Edit</button>
-        <button class="bg-pink-500 rounded-md px-5  text-white">Delete</button>
-    </div>
-</div>
-<div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-full">
-    <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-    <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-        <div>Food Name</div>
-        <div>Price</div>
-        <div>Quantity in stock</div>
-    </div>
-    <div class="flex justify-center p-2 gap-x-1">
-        <button class="bg-pink-500 rounded-md px-5  text-white">Edit</button>
-        <button class="bg-pink-500 rounded-md px-5  text-white">Delete</button>
-    </div>
-</div>
-<div class="flex flex-col border-pink-500 border shadow-xl  rounded-md w-full">
-    <div class="flex w-full justify-center items-center h-full"><img src="https://ministryofcurry.com/wp-content/uploads/2023/12/crispy-dosa_-3.jpg" alt="" class="object-fill w-full h-28 rounded-t-md" ></div>
-    <div class="flex flex-col w-full border-t-2 border-pink-500 p-4 ">
-        <div>Food Name</div>
-        <div>Price</div>
-        <div>Quantity in stock</div>
-    </div>
-    <div class="flex justify-center p-2 gap-x-1">
-        <button class="bg-pink-500 rounded-md px-5  text-white">Edit</button>
-        <button class="bg-pink-500 rounded-md px-5  text-white">Delete</button>
-    </div>
-</div> -->

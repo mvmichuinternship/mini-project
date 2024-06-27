@@ -38,8 +38,27 @@
   <body onload="tokenValidation();">
     <div class="flex h-screen w-full justify-around items-center">
       <div
-        class="flex flex-col fixed top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
-      ></div>
+        class="flex flex-col justify-start py-20 gap-y-5 items-center fixed z-5 top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
+        >
+        <!-- <div class=""> -->
+    
+          <a href="./home.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-house hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg></a>
+          <a href="./admindashboard.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-bank2 hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916zM12.375 6v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2M.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1z"/>
+        </svg></a>
+          <a href="./addFood.html" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-plus-square hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg></a>
+          <button onclick="logout()" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ec4899" class="bi bi-box-arrow-right hover:fill-white hover:bg-pink-500 bg-white p-2 rounded-md" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>          
+          </svg></button>
+
+        <!-- </div> -->
+    </div>
       <div class=" h-auto my-10 self-center flex flex-col p-8 gap-y-4 items-center border border-pink-500 shadow-md rounded-md md:w-[40%] sm:w-[60%] w-[70%]">
         <div class="px-4 text-pink-500 text-2xl ">
             Add Food

@@ -15,7 +15,7 @@ const checkLoggedIn=()=>{
 
   const tokenValidation=()=>{
     var token = localStorage.getItem("token");
-    if(!token){
+    if(token==undefined || !token){
         window.location.href="./login.html"
     }
   }
