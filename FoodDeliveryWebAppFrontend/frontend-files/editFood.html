@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet">
     <script src="loggedIn.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <title>Add Menu</title>
     <script>
         const queryString = window.location.search;
@@ -34,8 +36,14 @@
           
           }),
         })
-          .then((res) => {res.json(); console.log(res)})
-          .then(console.log);
+          .then((res) => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            res.json();showToast("Successfully edited item",1000,'#00b300')})
+          .catch(error => {
+        showToast('Error editing item',1000,'#de0a26');
+        console.error('Error fetching data:', error);})
         }
 
         const getFood=()=>{
@@ -55,6 +63,7 @@
             var foods= await res.json();
             console.log(foods)
             fName.value = `${foods.fName}`
+            fDescription.value = `${foods.fDescription}`
             fprice.value = `${foods.unitPrice}`
             fqty.value = `${foods.quantityInStock}`
         })
@@ -62,8 +71,8 @@
         }
     </script>
   </head>
-  <body onload="tokenValidation();getFood()">
-    <div class="flex h-screen w-full justify-around items-center">
+  <body onload="tokenValidation();checkAdmin();getFood()">
+    <div class="flex h-screen w-full justify-around items-center" id="admin-dash-menu">
       <div
         class="flex flex-col justify-start py-20 gap-y-5 items-center fixed z-5 top-0 left-0 w-[30px] sm:w-[5%] xs:w-[5%] h-full border-r-2 border-pink-500 bg-pink-200"
         >

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet" />
     <script src="loggedIn.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <title>Cancel Payment</title>
     <script>
 
@@ -71,8 +73,14 @@
                 Authorization: "Bearer "+ localStorage.getItem("token"),
             },
         })
-        .then((res)=>{res.json();window.location.href =`http://127.0.0.1:5500/makePayment.html?id=${oId}`})
-        .then(console.log)
+        .then((res)=>{
+          if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            res.json();window.location.href =`./makePayment.html?id=${oId}`; showToast("Successfully cancelled payment",1,'#00b300')})
+        .catch(error => {
+        showToast('Payment failed',1,'#de0a26');
+        console.error('Error fetching data:', error);})
       }
 
     </script>

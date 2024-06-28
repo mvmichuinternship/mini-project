@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet" />
     <script src="loggedIn.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <title>Payment page</title>
     <script>
 
@@ -25,13 +27,17 @@ const queryString = window.location.search;
             "oId": oId,
             "paymentMethod": methodname,
           }),
-        }).then((res)=>{return res.json(); console.log(res) ;
+        }).then((res)=>{
+          if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json();  ;
         
             // window.location.href=`http://127.0.0.1:5500/cancelPayment.html?pid=${res.payId}`
             })
             .then(
                 (data) => {
-        console.log(data); 
+                  showToast("Successfully made payment",1000,'#00b300')
         var payId =  data.payId; 
         var token = localStorage.getItem('token')
          var cartId = localStorage.getItem('cartId')
@@ -44,6 +50,9 @@ const queryString = window.location.search;
         window.location.href = `./cancelPayment.html?pid=${payId}&oid=${oId}`;
     }
 )
+.catch(error => {
+        showToast('Payment failed',1000,'#de0a26');
+        console.error('Error fetching data:', error);})
         }
     </script>
 </head>
