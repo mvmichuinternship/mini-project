@@ -77,7 +77,7 @@
           if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            res.json();window.location.href =`./makePayment.html?id=${oId}`; showToast("Successfully cancelled payment",1,'#00b300')})
+            res.json();window.location.href =`./makePayment.html?id=${oId}`; showToast("Successfully cancelled payment",1,'#ec4899')})
         .catch(error => {
         showToast('Payment failed',1,'#de0a26');
         console.error('Error fetching data:', error);})

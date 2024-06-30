@@ -32,7 +32,7 @@
             }
             return res.json()}  )
           .then(obj=>{ localStorage.setItem('token',obj.token); localStorage.setItem('role',obj.role), localStorage.setItem('cid',obj.userID-1);
-          showToast("Successfully logged in",1000,'#00b300');
+          showToast("Successfully logged in",1000,'#ec4899');
           if(obj.role=="Admin") 
           window.location.href="./adminDashboard.html"
         else

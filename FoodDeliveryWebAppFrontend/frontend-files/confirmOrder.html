@@ -35,7 +35,7 @@
                 throw new Error('Network response was not ok');
             }
             res.json();
-            showToast("Your order is confirmed!",1000,'#00b300')
+            showToast("Your order is confirmed!",1000,'#ec4899')
             orderStatus.classList.remove("hidden");
             orderbtn.classList.add("hidden");
             paymentbtn.innerHTML = `<a href="./makePayment.html?id=${oId}" id="paymentbtn" class="self-center w-[48%] py-1 px-2 mt-4 bg-pink-500 rounded-md hover:bg-pink-600 text-white">

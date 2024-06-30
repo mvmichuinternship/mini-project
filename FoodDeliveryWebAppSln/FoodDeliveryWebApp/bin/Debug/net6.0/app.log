@@ -19468,3 +19468,1518 @@ INFO  01:25:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using p
 INFO  01:25:53 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
 FROM [Menus] AS [m]
+INFO  11:15:23 Now listening on: http://localhost:5023
+INFO  11:15:23 Application started. Press Ctrl+C to shut down.
+INFO  11:15:23 Hosting environment: Development
+INFO  11:15:23 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  11:16:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:16:57 Executed DbCommand (252ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:16:57 Executed DbCommand (8ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:16:58 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:16:58 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:17:40 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:17:40 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:17:41 Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  11:17:41 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:17:41 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:17:41 Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  11:18:43 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:18:43 Executed DbCommand (15ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:18:43 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:18:43 Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  11:18:43 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:18:43 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:18:43 Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  11:18:47 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:18:47 Executed DbCommand (9ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartId], [c].[FId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:18:47 Executed DbCommand (6ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([c].[Total]), 0)
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:18:48 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:18:48 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:19:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:19:23 Executed DbCommand (14ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+ERROR 11:19:23 Failed executing DbCommand (27ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OId], [CartId], [CustomerId], [Status])
+VALUES (@p0, @p1, @p2, @p3);
+ERROR 11:19:23 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Orders'. Cannot insert duplicate key in object 'dbo.Orders'. The duplicate key value is (6).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e16176b4-5468-4e11-8183-423cf28c1d1b
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Orders'. Cannot insert duplicate key in object 'dbo.Orders'. The duplicate key value is (6).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e16176b4-5468-4e11-8183-423cf28c1d1b
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ERROR 11:19:24 An unhandled exception has occurred while executing the request.
+FoodDeliveryWebApp.exceptions.UnableToRegisterException: Unable to add to order at the moment
+   at FoodDeliveryWebApp.services.OrderService.AddOrderAndDetails(OrderAndDetailsDTO orderAndDetailsDTO) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\services\OrderService.cs:line 72
+   at FoodDeliveryWebApp.Controllers.OrderController.Register(OrderAndDetailsDTO menu) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\Controllers\OrderController.cs:line 43
+   at lambda_method270(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:19:31 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:19:31 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OId], [CartId], [CustomerId], [Status])
+VALUES (@p0, @p1, @p2, @p3);
+INFO  11:19:31 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:19:31 Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderDetails] ([FId], [MenuFId], [OId], [OrderOId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [OrderDetailsId]
+FROM [OrderDetails]
+WHERE @@ROWCOUNT = 1 AND [OrderDetailsId] = scope_identity();
+INFO  11:19:31 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:19:31 Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FDescription] = @p0, [FImage] = @p1, [FName] = @p2, [QuantityInStock] = @p3, [UnitPrice] = @p4
+WHERE [FId] = @p5;
+SELECT @@ROWCOUNT;
+INFO  11:19:31 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderDetails] ([FId], [MenuFId], [OId], [OrderOId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [OrderDetailsId]
+FROM [OrderDetails]
+WHERE @@ROWCOUNT = 1 AND [OrderDetailsId] = scope_identity();
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FDescription] = @p0, [FImage] = @p1, [FName] = @p2, [QuantityInStock] = @p3, [UnitPrice] = @p4
+WHERE [FId] = @p5;
+SELECT @@ROWCOUNT;
+INFO  11:19:31 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:19:31 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartDetailsId] = @__key_0
+INFO  11:19:31 Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartDetails]
+WHERE [CartDetailsId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartDetailsId] = @__key_0
+INFO  11:19:31 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartDetails]
+WHERE [CartDetailsId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:19:31 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:20:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:20:04 Executed DbCommand (20ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartId], [c].[FId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:20:04 Executed DbCommand (9ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([c].[Total]), 0)
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+ERROR 11:20:05 An unhandled exception has occurred while executing the request.
+FoodDeliveryWebApp.exceptions.NoId: No cart with this Id
+   at FoodDeliveryWebApp.repositories.CartDetailsRepository.GetTotalForCart(Int32 cartId) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\repositories\CartDetailsRepository.cs:line 97
+   at FoodDeliveryWebApp.services.CartService.GetTotal(Int32 id) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\services\CartService.cs:line 178
+   at FoodDeliveryWebApp.Controllers.CartController.ViewTotal(Int32 id) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\Controllers\CartController.cs:line 80
+   at lambda_method256(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:21:22 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:22 Executed DbCommand (13ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:22 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  11:21:22 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:22 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:22 Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  11:21:24 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:24 Executed DbCommand (5ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartId], [c].[FId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:21:24 Executed DbCommand (6ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([c].[Total]), 0)
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:21:24 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:27 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:27 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:27 Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OId], [CartId], [CustomerId], [Status])
+VALUES (@p0, @p1, @p2, @p3);
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:27 Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderDetails] ([FId], [MenuFId], [OId], [OrderOId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [OrderDetailsId]
+FROM [OrderDetails]
+WHERE @@ROWCOUNT = 1 AND [OrderDetailsId] = scope_identity();
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:27 Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FDescription] = @p0, [FImage] = @p1, [FName] = @p2, [QuantityInStock] = @p3, [UnitPrice] = @p4
+WHERE [FId] = @p5;
+SELECT @@ROWCOUNT;
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartDetailsId] = @__key_0
+INFO  11:21:27 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartDetails]
+WHERE [CartDetailsId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:21:27 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+ERROR 11:21:27 An exception occurred while iterating over the results of a query for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FoodAppContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FoodAppContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+INFO  11:21:29 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:29 Executed DbCommand (2ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartId], [c].[FId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:21:29 Executed DbCommand (1ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([c].[Total]), 0)
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+ERROR 11:21:29 An unhandled exception has occurred while executing the request.
+FoodDeliveryWebApp.exceptions.NoId: No cart with this Id
+   at FoodDeliveryWebApp.repositories.CartDetailsRepository.GetTotalForCart(Int32 cartId) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\repositories\CartDetailsRepository.cs:line 97
+   at FoodDeliveryWebApp.services.CartService.GetTotal(Int32 id) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\services\CartService.cs:line 178
+   at FoodDeliveryWebApp.Controllers.CartController.ViewTotal(Int32 id) in C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\Controllers\CartController.cs:line 80
+   at lambda_method256(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:21:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:50 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:50 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartId], [CustomerId])
+VALUES (@p0, @p1);
+INFO  11:21:50 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:50 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:50 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  11:21:51 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:51 Executed DbCommand (3ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartId], [c].[FId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:21:51 Executed DbCommand (2ms) [Parameters=[@__cartId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([c].[Total]), 0)
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__cartId_0
+INFO  11:21:51 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:57 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([OId], [CartId], [CustomerId], [Status])
+VALUES (@p0, @p1, @p2, @p3);
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderDetails] ([FId], [MenuFId], [OId], [OrderOId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [OrderDetailsId]
+FROM [OrderDetails]
+WHERE @@ROWCOUNT = 1 AND [OrderDetailsId] = scope_identity();
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:57 Executed DbCommand (0ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:21:57 Executed DbCommand (0ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Menus] SET [FDescription] = @p0, [FImage] = @p1, [FName] = @p2, [QuantityInStock] = @p3, [UnitPrice] = @p4
+WHERE [FId] = @p5;
+SELECT @@ROWCOUNT;
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartDetailsId] = @__key_0
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartDetails]
+WHERE [CartDetailsId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:21:57 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+ERROR 11:21:57 An exception occurred while iterating over the results of a query for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FoodAppContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FoodAppContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+INFO  11:22:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:00 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [o].[OId], [o].[CartId], [o].[CustomerId], [o].[Status]
+FROM [Orders] AS [o]
+WHERE [o].[OId] = @__key_0
+INFO  11:22:01 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderDetailsId], [o].[FId], [o].[MenuFId], [o].[OId], [o].[OrderOId], [o].[Qty_ordered], [o].[Total]
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__key_0
+INFO  11:22:01 Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Payments] ([Amount], [CustomerId], [OId], [PaymentMethod], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [PayId]
+FROM [Payments]
+WHERE @@ROWCOUNT = 1 AND [PayId] = scope_identity();
+INFO  11:22:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:01 Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OId], [o].[FId], [o].[Qty_ordered], [o].[Total]
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__orderId_0
+INFO  11:22:01 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[PayId], [p].[Amount], [p].[CustomerId], [p].[OId], [p].[PaymentMethod], [p].[Status]
+FROM [Payments] AS [p]
+WHERE [p].[PayId] = @__key_0
+INFO  11:22:01 Executed DbCommand (6ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[Total]), 0)
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__orderId_0
+INFO  11:22:01 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:22:08 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:08 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[PayId], [p].[Amount], [p].[CustomerId], [p].[OId], [p].[PaymentMethod], [p].[Status]
+FROM [Payments] AS [p]
+WHERE [p].[PayId] = @__key_0
+INFO  11:22:08 Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Payments]
+WHERE [PayId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:22:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:13 Executed DbCommand (8ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [o].[OId], [o].[CartId], [o].[CustomerId], [o].[Status]
+FROM [Orders] AS [o]
+WHERE [o].[OId] = @__key_0
+INFO  11:22:13 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderDetailsId], [o].[FId], [o].[MenuFId], [o].[OId], [o].[OrderOId], [o].[Qty_ordered], [o].[Total]
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__key_0
+INFO  11:22:13 Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Payments] ([Amount], [CustomerId], [OId], [PaymentMethod], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [PayId]
+FROM [Payments]
+WHERE @@ROWCOUNT = 1 AND [PayId] = scope_identity();
+INFO  11:22:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:13 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:13 Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OId], [o].[FId], [o].[Qty_ordered], [o].[Total]
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__orderId_0
+INFO  11:22:14 Executed DbCommand (7ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[Total]), 0)
+FROM [OrderDetails] AS [o]
+WHERE [o].[OId] = @__orderId_0
+INFO  11:22:14 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  11:22:14 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[PayId], [p].[Amount], [p].[CustomerId], [p].[OId], [p].[PaymentMethod], [p].[Status]
+FROM [Payments] AS [p]
+WHERE [p].[PayId] = @__key_0
+INFO  11:22:15 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:15 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [p].[PayId], [p].[Amount], [p].[CustomerId], [p].[OId], [p].[PaymentMethod], [p].[Status]
+FROM [Payments] AS [p]
+WHERE [p].[PayId] = @__key_0
+INFO  11:22:15 Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Payments]
+WHERE [PayId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:22:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:39 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:22:39 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:22:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:39 Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:22:55 Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:23:01 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:23:01 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:23:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:23:32 Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:23:32 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  11:23:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:23:32 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:24:03 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:24:03 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  11:37:30 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:37:30 Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feedbacks] ([Comment], [CommentId], [CustomerId], [FId], [FbCommentCommentId], [Rating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [FbId]
+FROM [Feedbacks]
+WHERE @@ROWCOUNT = 1 AND [FbId] = scope_identity();
+INFO  11:38:16 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:38:16 Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  11:38:19 Executed DbCommand (16ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:38:22 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:38:22 Executed DbCommand (3ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  11:38:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:38:49 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:38:49 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:38:49 Failed executing DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:38:49 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:72790ded-7dfd-4351-a05d-8e4fa55badd2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:72790ded-7dfd-4351-a05d-8e4fa55badd2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:38:49 Unable to delete feedback
+INFO  11:39:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:39:23 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:39:23 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:39:23 Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:39:23 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:72790ded-7dfd-4351-a05d-8e4fa55badd2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:72790ded-7dfd-4351-a05d-8e4fa55badd2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:39:23 Unable to delete feedback
+INFO  11:39:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:39:46 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:39:46 Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:39:46 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:39:46 Executed DbCommand (5ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  11:39:46 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+INFO  11:39:46 Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:40:00 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:40:00 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:41:33 Now listening on: http://localhost:5023
+INFO  11:41:33 Application started. Press Ctrl+C to shut down.
+INFO  11:41:33 Hosting environment: Development
+INFO  11:41:33 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  11:41:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:41:59 Executed DbCommand (292ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:41:59 Executed DbCommand (108ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:42:00 Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Feedbacks]
+WHERE [FbId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  11:42:42 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:42:42 Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feedbacks] ([Comment], [CommentId], [CustomerId], [FId], [FbCommentCommentId], [Rating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [FbId]
+FROM [Feedbacks]
+WHERE @@ROWCOUNT = 1 AND [FbId] = scope_identity();
+INFO  11:43:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:43:13 Executed DbCommand (1,007ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  11:43:13 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:43:13 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:43:13 Executed DbCommand (4ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  11:43:37 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:43:37 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:43:37 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:43:37 Failed executing DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:43:37 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:43:38 Unable to delete feedback
+INFO  11:44:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:44:09 Executed DbCommand (17ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:44:19 Executed DbCommand (24ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:44:23 Failed executing DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:44:23 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:44:38 Unable to delete feedback
+INFO  11:45:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:45:10 Executed DbCommand (21ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:45:25 Executed DbCommand (18ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:46:01 Failed executing DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:46:01 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_Menus_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:46:33 Unable to delete feedback
+INFO  11:49:02 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:49:02 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:49:16 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:49:21 Failed executing DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:49:21 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_FbComments_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_FbComments_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7540469b-24d9-4fe5-a3c5-6c313e0de8f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 11:58:46 Unable to delete feedback
+INFO  11:59:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  11:59:09 Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  11:59:29 Executed DbCommand (15ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+ERROR 11:59:41 Failed executing DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+ERROR 11:59:41 An exception occurred in the database while saving changes for context type 'FoodDeliveryWebApp.context.FoodAppContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_FbComments_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:66ea09ab-a410-4887-af6d-72b9fcd96984
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Feedbacks_FbComments_CommentId". The conflict occurred in database "FoodDeliveryAppDB", table "dbo.Feedbacks", column 'CommentId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:66ea09ab-a410-4887-af6d-72b9fcd96984
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+FATAL 12:07:29 Unable to delete feedback
+INFO  12:07:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:07:39 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:07:46 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+INFO  12:07:50 Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:07:58 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+FATAL 12:08:36 Unable to delete feedback
+INFO  12:09:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:09:32 Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feedbacks] ([Comment], [CommentId], [CustomerId], [FId], [FbCommentCommentId], [Rating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [FbId]
+FROM [Feedbacks]
+WHERE @@ROWCOUNT = 1 AND [FbId] = scope_identity();
+INFO  12:09:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:09:47 Executed DbCommand (1,173ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  12:09:47 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:09:47 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:09:47 Executed DbCommand (5ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  12:10:39 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:10:39 Executed DbCommand (12ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:10:46 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+INFO  12:10:51 Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:11:11 Executed DbCommand (15ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+FATAL 12:12:39 Unable to delete feedback
+INFO  12:12:51 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:12:51 Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feedbacks] ([Comment], [CommentId], [CustomerId], [FId], [FbCommentCommentId], [Rating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [FbId]
+FROM [Feedbacks]
+WHERE @@ROWCOUNT = 1 AND [FbId] = scope_identity();
+INFO  12:13:19 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:13:20 Executed DbCommand (985ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  12:13:20 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:13:20 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:13:20 Executed DbCommand (3ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  12:14:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:14:06 Executed DbCommand (12ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:14:30 Executed DbCommand (33ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[CommentId] = @__key_0
+INFO  12:14:53 Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FbComments]
+WHERE [CommentId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:15:24 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+FATAL 12:15:29 Unable to delete feedback
+INFO  12:16:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:16:46 Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feedbacks] ([Comment], [CommentId], [CustomerId], [FId], [FbCommentCommentId], [Rating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [FbId]
+FROM [Feedbacks]
+WHERE @@ROWCOUNT = 1 AND [FbId] = scope_identity();
+INFO  12:16:50 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:16:50 Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  12:16:50 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+FATAL 12:16:58 Unable to reply to feedback
+INFO  12:17:10 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:17:11 Executed DbCommand (932ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FbComments] ([AdminId], [CommentText], [FbId])
+VALUES (@p0, @p1, @p2);
+SELECT [CommentId]
+FROM [FbComments]
+WHERE @@ROWCOUNT = 1 AND [CommentId] = scope_identity();
+INFO  12:17:15 Executed DbCommand (9ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:17:15 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:17:15 Executed DbCommand (7ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Single)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Feedbacks] SET [Comment] = @p0, [CommentId] = @p1, [CustomerId] = @p2, [FId] = @p3, [FbCommentCommentId] = @p4, [Rating] = @p5
+WHERE [FbId] = @p6;
+SELECT @@ROWCOUNT;
+INFO  12:17:31 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:17:32 Executed DbCommand (1,020ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[FbId], [f].[Comment], [f].[CommentId], [f].[CustomerId], [f].[FId], [f].[FbCommentCommentId], [f].[Rating]
+FROM [Feedbacks] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:17:32 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [f].[CommentId], [f].[AdminId], [f].[CommentText], [f].[FbId]
+FROM [FbComments] AS [f]
+WHERE [f].[FbId] = @__key_0
+INFO  12:18:28 Now listening on: http://localhost:5023
+INFO  12:18:28 Application started. Press Ctrl+C to shut down.
+INFO  12:18:28 Hosting environment: Development
+INFO  12:18:28 Content root path: C:\Users\VC\Desktop\mini-project\FoodDeliveryWebAppSln\FoodDeliveryWebApp\
+INFO  12:21:48 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:21:49 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:21:50 Executed DbCommand (136ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:21:50 Executed DbCommand (136ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:22:47 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:22:47 Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:22:53 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:22:53 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:22:55 Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:22:55 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:22:55 Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:23:04 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:23:04 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:23:09 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:23:09 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:23:54 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:23:54 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:24:06 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:24:07 Executed DbCommand (84ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  12:24:07 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[CartId], [c].[CustomerId]
+FROM [Carts] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  12:24:07 Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Carts] SET [CustomerId] = @p0
+WHERE [CartId] = @p1;
+SELECT @@ROWCOUNT;
+INFO  12:24:07 Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CartDetailsId], [c].[CartId], [c].[FId], [c].[MenuFId], [c].[Qty_ordered], [c].[Total]
+FROM [CartDetails] AS [c]
+WHERE [c].[CartId] = @__key_0
+INFO  12:24:07 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  12:24:08 Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartId], [FId], [MenuFId], [Qty_ordered], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [CartDetailsId]
+FROM [CartDetails]
+WHERE @@ROWCOUNT = 1 AND [CartDetailsId] = scope_identity();
+INFO  12:25:32 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:25:32 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:25:41 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:25:41 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:26:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:14 Executed DbCommand (12ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  12:26:14 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AdminId], [u].[CustomerId], [u].[Name], [u].[Password], [u].[PasswordHashKey], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__key_0
+INFO  12:26:14 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:14 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:26:18 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:18 Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  12:26:18 Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Menus]
+WHERE [FId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:26:18 Success
+INFO  12:26:20 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:20 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  12:26:20 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Menus]
+WHERE [FId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:26:20 Success
+INFO  12:26:23 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:23 Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+WHERE [m].[FId] = @__key_0
+INFO  12:26:23 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Menus]
+WHERE [FId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  12:26:23 Success
+INFO  12:26:25 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:26:25 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:27:46 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:27:46 Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]
+INFO  12:28:12 Entity Framework Core 6.0.30 initialized 'FoodAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  12:28:12 Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[FId], [m].[FDescription], [m].[FImage], [m].[FName], [m].[QuantityInStock], [m].[UnitPrice]
+FROM [Menus] AS [m]

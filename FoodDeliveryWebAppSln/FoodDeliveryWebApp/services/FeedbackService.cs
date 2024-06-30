@@ -63,10 +63,15 @@ namespace FoodDeliveryWebApp.services
         {
             try
             {
+                Feedback fb = await _feedbackRepository.Get(id);
 
             FbComment commentId =  await _feedbackCommentRepository.GetByFbId(id);
-            FbComment fbComment = await _feedbackCommentRepository.Delete(commentId.CommentId);
-            Feedback fb = await _feedbackRepository.Delete(id);
+                if(commentId != null)
+                {
+
+                FbComment fbComment = await _feedbackCommentRepository.Delete(commentId.CommentId);
+                }
+            //Feedback fb = await _feedbackRepository.Delete(id);
             
 
                 return fb;

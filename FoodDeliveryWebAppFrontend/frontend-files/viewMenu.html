@@ -99,10 +99,13 @@
           quantity: qty,
           }),
         })
-          .then((res) => res.json())
+          .then((res) =>{if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+             res.json()})
           .then((data) => {
             cartItems = [];
-            showToast("Successfully added to cart",1000,'#00b300')
+            showToast("Successfully added to cart",1000,'#ec4899')
             
           })
           .catch((error) => {

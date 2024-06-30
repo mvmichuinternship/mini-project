@@ -35,7 +35,7 @@
           .then(res => {if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            res.json();showToast("Successfully added item to menu",1000,'#00b300')})
+            res.json();showToast("Successfully added item to menu",1000,'#ec4899')})
           .catch(error => {
         showToast('Error adding item to menu!',1000,'#de0a26');
         console.error('Error fetching data:', error);

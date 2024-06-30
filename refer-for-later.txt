@@ -12,3 +12,10 @@ login: if role=admin redirect to admin dashboard; else redirect to view menu -- 
 admindashboard: add button top left or rightcorner, change layout
 
 navigation buttons
+
+
+To do:
+homepage images
+validation: phone number, password min 6,required fields
+feedback if possible
+change toast colour to pink

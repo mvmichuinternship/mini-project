@@ -10,6 +10,13 @@
     <title>Register Page</title>
     <script>
         const clickButton = () => {
+
+          var myDiv = document.getElementById("buttondiv");
+          var errors = validateAllFields();
+          myDiv.innerHTML = errors.join("<br>");
+
+
+
         const txtRole = document.getElementById('txtRole').value;
         const txtPhone = document.getElementById('txtPhone').value;
         const txtName = document.getElementById('txtName').value;
@@ -35,7 +42,7 @@
             if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            res.json(); window.location.href="./login.html";showToast("Successfully registered Admin",1000,'#00b300')})
+            res.json(); window.location.href="./login.html";showToast("Successfully registered Admin",1000,'#ec4899')})
           .catch(error => {
         showToast('Error registering Admin',1000,'#de0a26');
         console.error('Error fetching data:', error);})
@@ -61,12 +68,130 @@
             if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            res.json(); window.location.href="./login.html"; showToast("Successfully registered Customer",1000,'#00b300')})
+            res.json(); window.location.href="./login.html"; showToast("Successfully registered Customer",1000,'#ec4899')})
           .catch(error => {
         showToast('Error registering Customer',1000,'#de0a26');
         console.error('Error fetching data:', error);})
         }
       };
+
+      function validateAllFields() {
+    var errors = [];
+
+    var nameError = validateName();
+    if (nameError) {
+        errors.push(nameError);
+    }
+
+    var phoneError = validatePhone();
+    if (phoneError) {
+        errors.push(phoneError);
+    }
+
+    var passError = validatePass();
+    if (passError) {
+        errors.push(passError);
+    }
+
+    var cPassError = validateCPass();
+    if (cPassError) {
+        errors.push(cPassError);
+    }
+    var selectError = validateSelect();
+    if (selectError) {
+        errors.push(selectError);
+    }
+
+
+    return errors;
+}
+
+    var validateName = () => {
+    var txtName = document.getElementById("txtName");
+    var errMsg = document.getElementById("errorMsgName");
+    if (!txtName.value) {
+        errMsg.innerHTML = "Cannot be empty";
+        return "Name cannot be empty";
+    }
+    else {
+        errMsg.innerHTML = "";
+        errMsg.classList.remove("text-xs");
+        errMsg.classList.remove("text-red-500");
+    }
+  }
+
+    var validateSelect = () => {
+    var txtName = document.getElementById("txtRole");
+    var errMsg = document.getElementById("errorMsgRole");
+    if (!txtName.value) {
+        errMsg.innerHTML = "Please choose a role";
+        return "Please choose a role";
+    }
+    else {
+        errMsg.innerHTML = "";
+        errMsg.classList.remove("text-xs");
+        errMsg.classList.remove("text-red-500");
+    }
+  }
+
+  var validatePhone = () => {
+    var txtPhone = document.getElementById("txtPhone");
+    var errMsg = document.getElementById("errorMsgPhone");
+    if (!txtPhone.value) {
+        errMsg.innerHTML = "Cannot be empty";
+        return "Phone cannot be empty";
+    }
+    else if (txtPhone.value.length !=10) {
+        errMsg.classList.add("text-red-500");
+        errMsg.classList.add("text-xs");
+        errMsg.innerHTML = "Invalid entry for Phone";
+        return "Invalid entry for Phone";
+    }
+    else {
+        errMsg.innerHTML = "";
+        errMsg.classList.remove("text-red-500");
+        errMsg.classList.remove("text-xs");
+    }
+}
+  var validatePass = () => {
+    var txtPhone = document.getElementById("txtPass");
+    var errMsg = document.getElementById("errorMsgPass");
+    if (!txtPhone.value) {
+        errMsg.innerHTML = "Cannot be empty";
+        return "Password cannot be empty";
+    }
+    else if (txtPhone.value.length <6) {
+        errMsg.classList.add("text-red-500");
+        errMsg.classList.add("text-xs");
+        errMsg.innerHTML = "Passowrd should be minimum 6 characters";
+        return "Passowrd should be minimum 6 characters";
+    }
+    else {
+        errMsg.innerHTML = "";
+        errMsg.classList.remove("text-red-500");
+        errMsg.classList.remove("text-xs");
+    }
+}
+  var validateCPass = () => {
+    var txtPass = document.getElementById("txtPass");
+    var txtCpass = document.getElementById("txtCPass");
+    var errMsg = document.getElementById("errorMsgCPass");
+    if (!txtCpass.value) {
+        errMsg.innerHTML = "Cannot be empty";
+        return "Confirm Password cannot be empty";
+    }
+    else if (txtPass.value !=txtCpass.value) {
+        errMsg.classList.add("text-red-500");
+        errMsg.classList.add("text-xs");
+        errMsg.innerHTML = "Password and confirm password do not match";
+        return "Password and confirm password do not match";
+    }
+    else {
+        errMsg.innerHTML = "";
+        errMsg.classList.remove("text-red-500");
+        errMsg.classList.remove("text-xs");
+    }
+}
 
     </script>
 </head>
@@ -82,20 +207,27 @@
                 Register
             </div>
             <div class="flex flex-col justify-center items-center gap-y-4 w-[80%]">
-                <input type="text" id="txtName" placeholder="Enter Name" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" placeholder="Enter Address" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="text" id="txtPhone" placeholder="Enter Phone" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="password" id="txtPass" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <input type="password" id="txtCPass" placeholder="Enter Confirm Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
-                <select name="role" id="txtRole" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
-                    <option value="none" selected disabled hidden>Select an Option</option>
+                <input type="text" onblur="validateName()" id="txtName" placeholder="Enter Name" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <div class="text-xs text-red-500 self-start w-full" id="errorMsgName"></div>
+                <input type="text" onblur="validatePhone()" id="txtPhone" placeholder="Enter Phone" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <div class="text-xs text-red-500 self-start w-full" id="errorMsgPhone"></div>
+                <input type="password" onblur="validatePass()" id="txtPass" placeholder="Enter Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <div class="text-xs text-red-500 self-start w-full" id="errorMsgPass"></div>
+                <input type="password" onblur="validateCPass()" id="txtCPass" placeholder="Enter Confirm Password" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-pink-600 shadow-md" >
+                <div class="text-xs text-red-500 self-start w-full" id="errorMsgCPass"></div>
+                <select name="role" onblur="validateSelect()" id="txtRole" class="w-full text-pink-500 placeholder-pink-800/50 placeholder:text-xs rounded-md px-3 py-1 border border-pink-500 focus:outline-none shadow-md">
+                    <option value="" selected disabled hidden>Select an Option</option>
                     <option value="Admin">Admin</option>
                     <option value="Customer">Customer</option>
                 </select>
+                <div class="text-xs text-red-500 self-start w-full" id="errorMsgRole"></div>
             </div>
-            <button onclick="clickButton()" class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
-                Register 
-            </button>
+            <div class="w-full flex flex-col justify-center items-center">
+              <button onclick="clickButton()" class="self-center w-[48%] py-1 mt-4 bg-pink-500 rounded-full hover:bg-pink-600 text-white">
+                  Register 
+              </button>
+              <div class="text-xs text-red-500 self-center" id="buttondiv" ></div>
+            </div>
         </div>
     </div>
 </body>
